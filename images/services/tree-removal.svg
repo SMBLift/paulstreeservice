@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="60%" stop-color="#B8DFF0"/>
+      <stop offset="100%" stop-color="#F5F2EE"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A7A2E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5A3A1A"/>
+      <stop offset="50%" stop-color="#6B4226"/>
+      <stop offset="100%" stop-color="#4A2E16"/>
+    </linearGradient>
+    <linearGradient id="canopy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3D6B1E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="stumpTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#B8923A"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#sky)"/>
+
+  <!-- Sun glow -->
+  <circle cx="500" cy="60" r="80" fill="url(#sun)"/>
+  <circle cx="500" cy="60" r="30" fill="#D4A843" opacity="0.4"/>
+
+  <!-- Background trees -->
+  <g opacity="0.3">
+    <polygon points="50,280 70,120 90,280" fill="#2D5016"/>
+    <polygon points="80,280 105,100 130,280" fill="#2D5016"/>
+    <polygon points="480,280 510,140 540,280" fill="#2D5016"/>
+    <polygon points="530,280 555,160 580,280" fill="#2D5016"/>
+  </g>
+
+  <!-- Ground -->
+  <ellipse cx="300" cy="340" rx="350" ry="80" fill="url(#ground)"/>
+  <rect x="0" y="330" width="600" height="70" fill="url(#ground)"/>
+
+  <!-- Main tree trunk (being cut) -->
+  <rect x="240" y="100" width="50" height="230" fill="url(#trunk)" rx="3"/>
+  <!-- Bark texture lines -->
+  <line x1="248" y1="120" x2="248" y2="320" stroke="#4A2E16" stroke-width="1" opacity="0.5"/>
+  <line x1="258" y1="110" x2="258" y2="325" stroke="#4A2E16" stroke-width="1" opacity="0.4"/>
+  <line x1="275" y1="115" x2="275" y2="320" stroke="#4A2E16" stroke-width="1" opacity="0.5"/>
+
+  <!-- Tree canopy (tilting slightly - about to fall) -->
+  <g transform="rotate(-8, 265, 100)">
+    <ellipse cx="265" cy="80" rx="90" ry="60" fill="url(#canopy)"/>
+    <ellipse cx="230" cy="95" rx="50" ry="40" fill="#3D6B1E"/>
+    <ellipse cx="300" cy="90" rx="55" ry="45" fill="#2D5016"/>
+    <ellipse cx="265" cy="60" rx="60" ry="40" fill="#3D6B1E"/>
+    <!-- Leaf highlights -->
+    <ellipse cx="245" cy="70" rx="25" ry="18" fill="#4A8A2A" opacity="0.5"/>
+    <ellipse cx="285" cy="85" rx="20" ry="15" fill="#4A8A2A" opacity="0.4"/>
+  </g>
+
+  <!-- Wedge cut in trunk -->
+  <polygon points="240,220 290,220 290,240 240,230" fill="#D4A843"/>
+  <polygon points="240,220 265,230 240,230" fill="#B8923A"/>
+
+  <!-- Cut line from back -->
+  <line x1="290" y1="225" x2="295" y2="225" stroke="#D4A843" stroke-width="3"/>
+
+  <!-- Stump (right side, already cut) -->
+  <rect x="400" y="300" width="60" height="35" fill="#6B4226" rx="3"/>
+  <ellipse cx="430" cy="300" rx="32" ry="10" fill="url(#stumpTop)"/>
+  <!-- Ring details on stump -->
+  <ellipse cx="430" cy="300" rx="22" ry="7" fill="none" stroke="#B8923A" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="430" cy="300" rx="14" ry="4" fill="none" stroke="#B8923A" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="430" cy="300" rx="6" ry="2" fill="#B8923A" opacity="0.4"/>
+
+  <!-- Wood chips flying from cut -->
+  <g fill="#D4A843">
+    <rect x="295" y="210" width="5" height="3" rx="1" transform="rotate(30, 297, 211)"/>
+    <rect x="305" y="205" width="4" height="2" rx="1" transform="rotate(-20, 307, 206)"/>
+    <rect x="300" y="218" width="6" height="3" rx="1" transform="rotate(45, 303, 219)"/>
+    <rect x="310" y="215" width="3" height="2" rx="1" transform="rotate(-35, 311, 216)"/>
+    <rect x="298" y="230" width="4" height="2" rx="1" transform="rotate(15, 300, 231)"/>
+    <rect x="315" y="222" width="5" height="2" rx="1" transform="rotate(-10, 317, 223)"/>
+  </g>
+
+  <!-- Sawdust on ground -->
+  <g fill="#D4A843" opacity="0.6">
+    <circle cx="270" cy="335" r="2"/>
+    <circle cx="280" cy="338" r="1.5"/>
+    <circle cx="260" cy="337" r="1"/>
+    <circle cx="290" cy="336" r="2"/>
+    <circle cx="255" cy="340" r="1.5"/>
+    <circle cx="285" cy="342" r="1"/>
+  </g>
+
+  <!-- Worker silhouette with chainsaw -->
+  <g fill="#1A1A1A" transform="translate(310, 200)">
+    <!-- Hard hat -->
+    <ellipse cx="0" cy="-5" rx="12" ry="5" fill="#D4A843"/>
+    <rect x="-10" y="-8" width="20" height="5" rx="2" fill="#D4A843"/>
+    <!-- Head -->
+    <circle cx="0" cy="5" r="10"/>
+    <!-- Body -->
+    <rect x="-12" y="15" width="24" height="40" rx="4"/>
+    <!-- Arms reaching toward tree with chainsaw -->
+    <rect x="-35" y="20" width="25" height="8" rx="3" transform="rotate(-15, -22, 24)"/>
+    <rect x="12" y="25" width="20" height="8" rx="3" transform="rotate(10, 22, 29)"/>
+    <!-- Legs -->
+    <rect x="-10" y="55" width="10" height="35" rx="3" transform="rotate(5, -5, 55)"/>
+    <rect x="2" y="55" width="10" height="35" rx="3" transform="rotate(-5, 7, 55)"/>
+    <!-- Boots -->
+    <rect x="-14" y="88" width="14" height="6" rx="2"/>
+    <rect x="0" y="88" width="14" height="6" rx="2"/>
+    <!-- Chainsaw -->
+    <rect x="-55" y="15" width="25" height="12" rx="2" fill="#555"/>
+    <rect x="-70" y="18" width="18" height="6" rx="1" fill="#888"/>
+    <!-- Chainsaw blade -->
+    <rect x="-72" y="17" width="3" height="8" rx="1" fill="#D4A843"/>
+  </g>
+
+  <!-- Fallen branches on ground -->
+  <g stroke="#6B4226" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M120,340 L180,330 L160,325"/>
+    <path d="M140,345 L170,338"/>
+  </g>
+  <g fill="#3D6B1E" opacity="0.7">
+    <ellipse cx="175" cy="325" rx="15" ry="8"/>
+    <ellipse cx="160" cy="330" rx="12" ry="7"/>
+  </g>
+
+  <!-- Direction arrow (showing fall direction) -->
+  <g stroke="#D4A843" stroke-width="2" fill="none" opacity="0.5" stroke-dasharray="8,4">
+    <path d="M265,50 C280,30 320,25 340,40"/>
+    <polygon points="340,40 330,32 335,44" fill="#D4A843" stroke="none"/>
+  </g>
+</svg>

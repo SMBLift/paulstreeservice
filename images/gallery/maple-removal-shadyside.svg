@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6BA3D6"/>
+      <stop offset="100%" stop-color="#B0D4F1"/>
+    </linearGradient>
+    <linearGradient id="grass2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A8A3E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <radialGradient id="mapleCanopy" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0%" stop-color="#C85A2A"/>
+      <stop offset="50%" stop-color="#A04420"/>
+      <stop offset="100%" stop-color="#6B4226"/>
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="300" fill="url(#sky2)"/>
+  <!-- Clouds -->
+  <ellipse cx="300" cy="40" rx="55" ry="18" fill="white" opacity="0.6"/>
+  <ellipse cx="100" cy="60" rx="35" ry="14" fill="white" opacity="0.5"/>
+  <!-- House background -->
+  <rect x="20" y="120" width="100" height="100" fill="#F5F2EE"/>
+  <polygon points="20,120 70,80 120,120" fill="#8B4513"/>
+  <rect x="45" y="145" width="20" height="25" fill="#6B4226"/>
+  <rect x="80" y="145" width="20" height="25" fill="#6B4226"/>
+  <!-- House right -->
+  <rect x="300" y="135" width="90" height="85" fill="#E8DDD0"/>
+  <polygon points="300,135 345,100 390,135" fill="#6B4226"/>
+  <rect x="325" y="155" width="18" height="22" fill="#F5F2EE"/>
+  <rect x="355" y="155" width="18" height="22" fill="#F5F2EE"/>
+  <!-- Ground -->
+  <rect x="0" y="220" width="400" height="80" fill="url(#grass2)"/>
+  <!-- Sidewalk -->
+  <rect x="0" y="230" width="400" height="12" fill="#C8C0B5" opacity="0.6"/>
+  <!-- Maple tree trunk -->
+  <rect x="185" y="80" width="30" height="140" fill="#6B4226"/>
+  <!-- Trunk texture -->
+  <line x1="192" y1="90" x2="192" y2="220" stroke="#5A3620" stroke-width="1" opacity="0.5"/>
+  <line x1="208" y1="95" x2="208" y2="220" stroke="#5A3620" stroke-width="1" opacity="0.5"/>
+  <!-- Maple canopy -->
+  <ellipse cx="200" cy="55" rx="80" ry="60" fill="url(#mapleCanopy)"/>
+  <ellipse cx="160" cy="65" rx="45" ry="35" fill="#B04E25" opacity="0.8"/>
+  <ellipse cx="240" cy="65" rx="45" ry="35" fill="#B04E25" opacity="0.8"/>
+  <ellipse cx="200" cy="30" rx="50" ry="30" fill="#C85A2A" opacity="0.7"/>
+  <!-- Maple leaves on ground -->
+  <g fill="#C85A2A" opacity="0.8">
+    <path d="M60,240 l5,-8 l3,4 l5,-6 l3,4 l5,-8 l2,6 l-5,4 l3,3 l-6,1 l1,5 l-5,-3 l-5,3 l1,-5 l-6,-1 l3,-3 z" transform="rotate(15,65,240)"/>
+    <path d="M140,250 l5,-8 l3,4 l5,-6 l3,4 l5,-8 l2,6 l-5,4 l3,3 l-6,1 l1,5 l-5,-3 l-5,3 l1,-5 l-6,-1 l3,-3 z" transform="rotate(-20,145,250)"/>
+    <path d="M250,245 l5,-8 l3,4 l5,-6 l3,4 l5,-8 l2,6 l-5,4 l3,3 l-6,1 l1,5 l-5,-3 l-5,3 l1,-5 l-6,-1 l3,-3 z" transform="rotate(30,255,245)"/>
+    <path d="M320,255 l5,-8 l3,4 l5,-6 l3,4 l5,-8 l2,6 l-5,4 l3,3 l-6,1 l1,5 l-5,-3 l-5,3 l1,-5 l-6,-1 l3,-3 z" transform="rotate(-10,325,255)"/>
+    <path d="M180,260 l4,-6 l2,3 l4,-5 l2,3 l4,-6 l2,5 l-4,3 l2,2 l-5,1 l1,4 l-4,-2 l-4,2 l1,-4 l-5,-1 l2,-2 z" transform="rotate(45,184,260)"/>
+  </g>
+  <!-- Falling leaves -->
+  <g fill="#D4A843" opacity="0.6">
+    <path d="M170,130 l3,-5 l2,2 l3,-4 l2,2 l3,-5 l1,4 l-3,2 l2,2 l-4,1 l1,3 l-3,-2 l-3,2 l1,-3 l-4,-1 l2,-2 z" transform="rotate(60,173,130)"/>
+    <path d="M230,110 l3,-5 l2,2 l3,-4 l2,2 l3,-5 l1,4 l-3,2 l2,2 l-4,1 l1,3 l-3,-2 l-3,2 l1,-3 l-4,-1 l2,-2 z" transform="rotate(-30,233,110)"/>
+  </g>
+  <!-- Cut marks on trunk -->
+  <line x1="183" y1="150" x2="217" y2="150" stroke="#D4A843" stroke-width="2"/>
+  <path d="M183,145 Q200,155 217,145" fill="none" stroke="#D4A843" stroke-width="1.5"/>
+  <!-- Rope on tree -->
+  <line x1="200" y1="80" x2="280" y2="180" stroke="#D4A843" stroke-width="2" stroke-dasharray="4,2"/>
+</svg>

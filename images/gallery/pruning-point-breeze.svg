@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9FD4"/>
+      <stop offset="100%" stop-color="#BDE0F5"/>
+    </linearGradient>
+    <linearGradient id="grass4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A8A3E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <radialGradient id="prunedCanopy" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="#4A8A2E"/>
+      <stop offset="60%" stop-color="#2D5016"/>
+      <stop offset="100%" stop-color="#1A3009"/>
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="300" fill="url(#sky4)"/>
+  <!-- Clouds -->
+  <ellipse cx="60" cy="35" rx="45" ry="16" fill="white" opacity="0.6"/>
+  <ellipse cx="350" cy="55" rx="38" ry="14" fill="white" opacity="0.5"/>
+  <!-- Background trees -->
+  <ellipse cx="40" cy="140" rx="35" ry="50" fill="#2D5016" opacity="0.4"/>
+  <rect x="35" y="160" width="10" height="60" fill="#6B4226" opacity="0.4"/>
+  <ellipse cx="370" cy="145" rx="30" ry="45" fill="#2D5016" opacity="0.4"/>
+  <rect x="365" y="165" width="10" height="55" fill="#6B4226" opacity="0.4"/>
+  <!-- Ground -->
+  <rect x="0" y="225" width="400" height="75" fill="url(#grass4)"/>
+  <!-- Elegant pruned tree -->
+  <rect x="180" y="90" width="28" height="135" fill="#6B4226"/>
+  <!-- Bark texture -->
+  <path d="M183,100 Q194,110 183,120 Q194,130 183,140 Q194,150 183,160" fill="none" stroke="#5A3620" stroke-width="1" opacity="0.5"/>
+  <path d="M205,95 Q194,105 205,115 Q194,125 205,135 Q194,145 205,155" fill="none" stroke="#5A3620" stroke-width="1" opacity="0.5"/>
+  <!-- Clean pruned branches -->
+  <line x1="194" y1="120" x2="140" y2="90" stroke="#6B4226" stroke-width="8" stroke-linecap="round"/>
+  <line x1="194" y1="110" x2="255" y2="80" stroke="#6B4226" stroke-width="8" stroke-linecap="round"/>
+  <line x1="194" y1="140" x2="130" y2="120" stroke="#6B4226" stroke-width="6" stroke-linecap="round"/>
+  <line x1="194" y1="130" x2="260" y2="110" stroke="#6B4226" stroke-width="6" stroke-linecap="round"/>
+  <!-- Elegant rounded canopy -->
+  <ellipse cx="194" cy="60" rx="85" ry="55" fill="url(#prunedCanopy)"/>
+  <!-- Clean canopy shape with nice dome -->
+  <ellipse cx="194" cy="40" rx="65" ry="38" fill="#3D6B1E" opacity="0.7"/>
+  <ellipse cx="194" cy="55" rx="75" ry="40" fill="#2D5016" opacity="0.6"/>
+  <!-- Highlight on canopy -->
+  <ellipse cx="180" cy="35" rx="30" ry="20" fill="#4A8A2E" opacity="0.4"/>
+  <!-- Cut branches on ground -->
+  <g stroke="#6B4226" stroke-linecap="round" fill="none">
+    <line x1="50" y1="240" x2="95" y2="235" stroke-width="4"/>
+    <line x1="60" y1="237" x2="75" y2="228" stroke-width="2"/>
+    <line x1="80" y1="236" x2="90" y2="225" stroke-width="2"/>
+    <line x1="100" y1="250" x2="145" y2="245" stroke-width="3"/>
+    <line x1="115" y1="247" x2="125" y2="238" stroke-width="2"/>
+    <line x1="280" y1="242" x2="330" y2="238" stroke-width="4"/>
+    <line x1="295" y1="240" x2="305" y2="230" stroke-width="2"/>
+    <line x1="315" y1="239" x2="325" y2="228" stroke-width="2"/>
+    <line x1="330" y1="252" x2="365" y2="248" stroke-width="3"/>
+  </g>
+  <!-- Small leaf clusters on cut branches -->
+  <ellipse cx="55" cy="235" rx="8" ry="6" fill="#2D5016" opacity="0.5"/>
+  <ellipse cx="105" cy="245" rx="7" ry="5" fill="#2D5016" opacity="0.5"/>
+  <ellipse cx="285" cy="237" rx="8" ry="6" fill="#2D5016" opacity="0.5"/>
+  <ellipse cx="335" cy="248" rx="7" ry="5" fill="#2D5016" opacity="0.5"/>
+  <!-- Tree base -->
+  <ellipse cx="194" cy="225" rx="22" ry="6" fill="#5A3620"/>
+</svg>

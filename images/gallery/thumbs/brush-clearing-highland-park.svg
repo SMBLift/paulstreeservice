@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6CAED8"/>
+      <stop offset="100%" stop-color="#B0D4F1"/>
+    </linearGradient>
+    <linearGradient id="grass8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A7A2E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky8)"/>
+  <ellipse cx="150" cy="30" rx="50" ry="15" fill="white" opacity="0.5"/>
+  <ellipse cx="330" cy="45" rx="40" ry="12" fill="white" opacity="0.4"/>
+  <g opacity="0.6">
+    <ellipse cx="30" cy="90" rx="30" ry="50" fill="#2D5016"/>
+    <ellipse cx="80" cy="85" rx="35" ry="55" fill="#1A3009"/>
+    <ellipse cx="340" cy="80" rx="35" ry="55" fill="#2D5016"/>
+    <ellipse cx="390" cy="90" rx="30" ry="50" fill="#1A3009"/>
+  </g>
+  <rect x="0" y="200" width="400" height="100" fill="url(#grass8)"/>
+  <g opacity="0.7">
+    <ellipse cx="60" cy="180" rx="25" ry="18" fill="#3D6B1E"/>
+    <ellipse cx="40" cy="190" rx="20" ry="15" fill="#2D5016"/>
+    <ellipse cx="85" cy="185" rx="22" ry="16" fill="#3D6B1E"/>
+    <ellipse cx="50" cy="195" rx="30" ry="12" fill="#2D5016"/>
+    <line x1="30" y1="200" x2="25" y2="170" stroke="#3D6B1E" stroke-width="2"/>
+    <line x1="45" y1="200" x2="42" y2="168" stroke="#4A7A2E" stroke-width="2"/>
+    <line x1="55" y1="200" x2="58" y2="172" stroke="#3D6B1E" stroke-width="2"/>
+    <line x1="70" y1="200" x2="65" y2="175" stroke="#4A7A2E" stroke-width="2"/>
+    <line x1="90" y1="200" x2="93" y2="170" stroke="#3D6B1E" stroke-width="2"/>
+  </g>
+  <rect x="180" y="200" width="220" height="100" fill="#5A8A3E" opacity="0.3"/>
+  <g transform="translate(200, 180)">
+    <rect x="0" y="10" width="65" height="30" fill="#D4A843" rx="3"/>
+    <rect x="-25" y="0" width="30" height="20" fill="#B8923A" rx="2"/>
+    <polygon points="-25,0 -40,5 -40,15 -25,20" fill="#B8923A"/>
+    <rect x="40" y="-5" width="10" height="18" fill="#888" rx="2" transform="rotate(-30, 45, 4)"/>
+    <circle cx="15" cy="45" r="8" fill="#333"/>
+    <circle cx="50" cy="45" r="8" fill="#333"/>
+    <circle cx="15" cy="45" r="3" fill="#666"/>
+    <circle cx="50" cy="45" r="3" fill="#666"/>
+    <line x1="65" y1="25" x2="85" y2="25" stroke="#888" stroke-width="3"/>
+  </g>
+  <g fill="#D4A843">
+    <circle cx="240" cy="160" r="2" opacity="0.7"/>
+    <circle cx="248" cy="155" r="1.5" opacity="0.6"/>
+    <circle cx="235" cy="150" r="2.5" opacity="0.5"/>
+    <circle cx="252" cy="145" r="1.5" opacity="0.4"/>
+    <circle cx="245" cy="140" r="2" opacity="0.3"/>
+    <circle cx="255" cy="150" r="2" opacity="0.5"/>
+    <circle cx="238" cy="142" r="1.8" opacity="0.4"/>
+    <circle cx="260" cy="155" r="1.5" opacity="0.3"/>
+  </g>
+  <ellipse cx="255" cy="200" rx="25" ry="8" fill="#D4A843" opacity="0.5"/>
+  <ellipse cx="255" cy="198" rx="20" ry="6" fill="#B8923A" opacity="0.4"/>
+  <g stroke="#6B4226" stroke-linecap="round" fill="none">
+    <line x1="130" y1="195" x2="175" y2="190" stroke-width="4"/>
+    <line x1="140" y1="190" x2="155" y2="182" stroke-width="2"/>
+    <line x1="120" y1="200" x2="160" y2="195" stroke-width="3"/>
+    <line x1="135" y1="198" x2="145" y2="188" stroke-width="2"/>
+  </g>
+  <ellipse cx="132" cy="188" rx="6" ry="4" fill="#3D6B1E" opacity="0.6"/>
+  <ellipse cx="122" cy="196" rx="5" ry="3" fill="#3D6B1E" opacity="0.6"/>
+  <g transform="translate(145, 160)">
+    <circle cx="0" cy="0" r="6" fill="#1A3009"/>
+    <rect x="-5" y="6" width="10" height="18" fill="#1A3009" rx="2"/>
+    <rect x="-7" y="24" width="6" height="15" fill="#1A3009" rx="2"/>
+    <rect x="1" y="24" width="6" height="15" fill="#1A3009" rx="2"/>
+    <line x1="5" y1="10" x2="20" y2="22" stroke="#1A3009" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-5" y1="10" x2="-15" y2="22" stroke="#1A3009" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g fill="#6B4226" opacity="0.3">
+    <rect x="300" y="220" width="6" height="2" rx="1" transform="rotate(20,303,221)"/>
+    <rect x="330" y="230" width="5" height="2" rx="1" transform="rotate(-30,332,231)"/>
+    <rect x="280" y="235" width="7" height="2" rx="1" transform="rotate(10,283,236)"/>
+    <rect x="350" y="215" width="5" height="2" rx="1" transform="rotate(40,352,216)"/>
+  </g>
+</svg>

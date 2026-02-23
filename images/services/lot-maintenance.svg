@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="60%" stop-color="#B8DFF0"/>
+      <stop offset="100%" stop-color="#F5F2EE"/>
+    </linearGradient>
+    <linearGradient id="messyGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B7A4E"/>
+      <stop offset="100%" stop-color="#5A6A3E"/>
+    </linearGradient>
+    <linearGradient id="cleanGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9A35"/>
+      <stop offset="100%" stop-color="#4A8A2A"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5A3A1A"/>
+      <stop offset="50%" stop-color="#6B4226"/>
+      <stop offset="100%" stop-color="#4A2E16"/>
+    </linearGradient>
+    <linearGradient id="canopyMessy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A8A35"/>
+      <stop offset="100%" stop-color="#3D6B1E"/>
+    </linearGradient>
+    <linearGradient id="canopyClean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A8A2A"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#B8923A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <circle cx="480" cy="55" r="35" fill="#D4A843" opacity="0.3"/>
+  <circle cx="480" cy="55" r="22" fill="#D4A843" opacity="0.2"/>
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.5">
+    <ellipse cx="130" cy="45" rx="50" ry="18"/>
+    <ellipse cx="160" cy="40" rx="30" ry="14"/>
+    <ellipse cx="380" cy="55" rx="40" ry="15"/>
+  </g>
+
+  <!-- ============ LEFT SIDE: MESSY / BEFORE ============ -->
+
+  <!-- Messy ground -->
+  <rect x="0" y="280" width="300" height="120" fill="url(#messyGround)"/>
+  <ellipse cx="150" cy="285" rx="160" ry="12" fill="#6B7A4E"/>
+
+  <!-- Patchy dead grass spots -->
+  <g fill="#8A7A4E" opacity="0.5">
+    <ellipse cx="60" cy="310" rx="25" ry="8"/>
+    <ellipse cx="180" cy="330" rx="20" ry="6"/>
+    <ellipse cx="120" cy="350" rx="18" ry="5"/>
+    <ellipse cx="220" cy="315" rx="15" ry="5"/>
+  </g>
+
+  <!-- Overgrown messy tree (left) -->
+  <g>
+    <rect x="80" y="160" width="18" height="130" fill="url(#trunk)"/>
+    <!-- Unruly canopy -->
+    <ellipse cx="90" cy="130" rx="65" ry="55" fill="url(#canopyMessy)"/>
+    <ellipse cx="70" cy="120" rx="40" ry="35" fill="#4A7A2E"/>
+    <ellipse cx="115" cy="125" rx="35" ry="30" fill="#3D6B1E"/>
+    <ellipse cx="90" cy="100" rx="45" ry="30" fill="#5A8A35"/>
+    <!-- Wild branches sticking out -->
+    <g stroke="#6B4226" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M55,130 Q30,120 20,105"/>
+      <path d="M130,115 Q155,105 165,90"/>
+      <path d="M75,95 Q60,75 50,60"/>
+      <path d="M110,90 Q125,70 135,55"/>
+    </g>
+    <!-- Wild leaf tufts on branch ends -->
+    <g fill="#5A8A35" opacity="0.7">
+      <circle cx="18" cy="103" r="8"/>
+      <circle cx="167" cy="88" r="7"/>
+      <circle cx="48" cy="58" r="6"/>
+      <circle cx="137" cy="53" r="7"/>
+    </g>
+    <!-- Dead branch -->
+    <path d="M65,155 Q40,160 25,170" stroke="#8A7050" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Debris and mess on left ground -->
+  <!-- Fallen branches -->
+  <g stroke="#6B4226" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <line x1="30" y1="300" x2="70" y2="295"/>
+    <line x1="40" y1="305" x2="55" y2="298"/>
+    <line x1="170" y1="315" x2="210" y2="310"/>
+    <line x1="250" y1="300" x2="275" y2="296"/>
+  </g>
+
+  <!-- Leaf piles -->
+  <g fill="#8A6A30" opacity="0.5">
+    <ellipse cx="50" cy="320" rx="20" ry="6"/>
+    <ellipse cx="140" cy="305" rx="15" ry="5"/>
+    <ellipse cx="230" cy="325" rx="18" ry="5"/>
+  </g>
+  <g fill="#6B7A4E" opacity="0.4">
+    <ellipse cx="55" cy="318" rx="15" ry="4"/>
+    <ellipse cx="145" cy="303" rx="10" ry="3"/>
+  </g>
+
+  <!-- Weeds -->
+  <g stroke="#6B8A3E" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6">
+    <path d="M40,290 Q38,275 35,265"/>
+    <path d="M43,290 Q45,272 48,262"/>
+    <path d="M160,295 Q158,280 155,270"/>
+    <path d="M163,295 Q165,278 168,268"/>
+    <path d="M260,290 Q258,278 256,268"/>
+    <path d="M263,290 Q266,276 270,266"/>
+  </g>
+
+  <!-- Overturned pot -->
+  <g transform="translate(200, 295) rotate(25)">
+    <ellipse cx="0" cy="0" rx="10" ry="12" fill="#B08050"/>
+    <ellipse cx="0" cy="0" rx="7" ry="9" fill="#C09060"/>
+  </g>
+
+  <!-- ============ DIVIDER LINE ============ -->
+  <line x1="300" y1="50" x2="300" y2="400" stroke="url(#divider)" stroke-width="3"/>
+  <!-- Arrow labels -->
+  <g font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+    <text x="240" y="275" fill="#6B4226" text-anchor="end" opacity="0.7">BEFORE</text>
+    <text x="360" y="275" fill="#2D5016" text-anchor="start" opacity="0.7">AFTER</text>
+  </g>
+  <!-- Arrows -->
+  <polygon points="252,278 245,275 245,281" fill="#6B4226" opacity="0.5"/>
+  <polygon points="348,278 355,275 355,281" fill="#2D5016" opacity="0.5"/>
+
+  <!-- ============ RIGHT SIDE: CLEAN / AFTER ============ -->
+
+  <!-- Clean, lush lawn -->
+  <rect x="300" y="280" width="300" height="120" fill="url(#cleanGround)"/>
+  <ellipse cx="450" cy="285" rx="160" ry="12" fill="#5A9A35"/>
+
+  <!-- Lawn stripes (mowed) -->
+  <g fill="#4A8A2A" opacity="0.12">
+    <rect x="300" y="290" width="300" height="10"/>
+    <rect x="300" y="310" width="300" height="10"/>
+    <rect x="300" y="330" width="300" height="10"/>
+    <rect x="300" y="350" width="300" height="10"/>
+    <rect x="300" y="370" width="300" height="10"/>
+  </g>
+
+  <!-- Well-shaped tree (right) -->
+  <g>
+    <rect x="430" y="160" width="16" height="125" fill="url(#trunk)"/>
+    <!-- Clean, round canopy -->
+    <ellipse cx="438" cy="120" rx="60" ry="55" fill="url(#canopyClean)"/>
+    <ellipse cx="425" cy="110" rx="38" ry="35" fill="#3D6B1E"/>
+    <ellipse cx="455" cy="115" rx="35" ry="30" fill="#2D5016"/>
+    <ellipse cx="438" cy="90" rx="42" ry="30" fill="#3D6B1E"/>
+    <!-- Highlights -->
+    <ellipse cx="425" cy="100" rx="18" ry="14" fill="#4A8A2A" opacity="0.4"/>
+    <ellipse cx="450" cy="105" rx="15" ry="12" fill="#4A8A2A" opacity="0.3"/>
+  </g>
+
+  <!-- Mulch ring around clean tree -->
+  <ellipse cx="438" cy="290" rx="35" ry="8" fill="#6B4226" opacity="0.6"/>
+  <ellipse cx="438" cy="290" rx="28" ry="6" fill="#7A5030" opacity="0.4"/>
+
+  <!-- Clean flower bed -->
+  <g transform="translate(380, 295)">
+    <!-- Mulch bed -->
+    <ellipse cx="0" cy="0" rx="45" ry="10" fill="#6B4226" opacity="0.4"/>
+    <!-- Small flowers -->
+    <circle cx="-25" cy="-2" r="3" fill="#D4A843"/>
+    <circle cx="-25" cy="-2" r="1.5" fill="#E8C860"/>
+    <circle cx="-15" cy="-4" r="3" fill="#D4A843"/>
+    <circle cx="-15" cy="-4" r="1.5" fill="#E8C860"/>
+    <circle cx="-5" cy="-3" r="3" fill="#D4A843"/>
+    <circle cx="-5" cy="-3" r="1.5" fill="#E8C860"/>
+    <!-- Flower stems -->
+    <g stroke="#2D5016" stroke-width="1" stroke-linecap="round">
+      <line x1="-25" y1="1" x2="-25" y2="5"/>
+      <line x1="-15" y1="-1" x2="-15" y2="5"/>
+      <line x1="-5" y1="0" x2="-5" y2="5"/>
+    </g>
+  </g>
+
+  <!-- Small trimmed shrubs on right -->
+  <g>
+    <ellipse cx="520" cy="285" rx="22" ry="16" fill="#2D5016"/>
+    <ellipse cx="520" cy="280" rx="18" ry="12" fill="#3D6B1E"/>
+    <ellipse cx="560" cy="287" rx="18" ry="14" fill="#2D5016"/>
+    <ellipse cx="560" cy="283" rx="14" ry="10" fill="#3D6B1E"/>
+  </g>
+
+  <!-- Clean edging line on right side -->
+  <line x1="305" y1="288" x2="600" y2="288" stroke="#2D5016" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Tools leaning against divider (rake, etc.) -->
+  <g transform="translate(310, 260)">
+    <!-- Rake handle -->
+    <line x1="5" y1="-80" x2="5" y2="25" stroke="#8A6A40" stroke-width="3" stroke-linecap="round"/>
+    <!-- Rake head -->
+    <rect x="-8" y="22" width="26" height="3" rx="1" fill="#555"/>
+    <g stroke="#555" stroke-width="1.5" stroke-linecap="round">
+      <line x1="-6" y1="25" x2="-6" y2="32"/>
+      <line x1="-2" y1="25" x2="-2" y2="32"/>
+      <line x1="2" y1="25" x2="2" y2="32"/>
+      <line x1="6" y1="25" x2="6" y2="32"/>
+      <line x1="10" y1="25" x2="10" y2="32"/>
+      <line x1="14" y1="25" x2="14" y2="32"/>
+      <line x1="18" y1="25" x2="18" y2="32"/>
+    </g>
+
+    <!-- Loppers handle -->
+    <line x1="20" y1="-70" x2="20" y2="20" stroke="#8A6A40" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="25" y1="-68" x2="25" y2="18" stroke="#8A6A40" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Lopper blades -->
+    <path d="M18,-72 Q15,-78 20,-80 Q25,-78 22,-72" fill="#AAA"/>
+    <path d="M23,-70 Q26,-76 23,-78 Q20,-76 23,-70" fill="#999"/>
+  </g>
+
+  <!-- Bag of yard waste (left side) -->
+  <g transform="translate(100, 335)">
+    <path d="M-18,0 Q-20,-30 -15,-40 Q0,-45 15,-40 Q20,-30 18,0 Z" fill="#6B4226" opacity="0.7"/>
+    <path d="M-15,-40 Q0,-43 15,-40" fill="#7A5030" opacity="0.6"/>
+    <!-- Leaves poking out -->
+    <g fill="#5A8A35" opacity="0.5">
+      <ellipse cx="-5" cy="-42" rx="5" ry="3" transform="rotate(-15, -5, -42)"/>
+      <ellipse cx="8" cy="-43" rx="4" ry="2" transform="rotate(20, 8, -43)"/>
+    </g>
+  </g>
+
+  <!-- Second waste bag -->
+  <g transform="translate(135, 340)">
+    <path d="M-15,0 Q-17,-25 -12,-33 Q0,-37 12,-33 Q17,-25 15,0 Z" fill="#6B4226" opacity="0.6"/>
+    <path d="M-12,-33 Q0,-36 12,-33" fill="#7A5030" opacity="0.5"/>
+  </g>
+</svg>

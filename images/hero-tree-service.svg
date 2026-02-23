@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Sky gradient -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="40%" stop-color="#b8dff0"/>
+      <stop offset="70%" stop-color="#ddeef5"/>
+      <stop offset="100%" stop-color="#F5F2EE"/>
+    </linearGradient>
+    <!-- Sun glow -->
+    <radialGradient id="sunGlow" cx="0.75" cy="0.18" r="0.35">
+      <stop offset="0%" stop-color="#fffbe6" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#fdf0c4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#87CEEB" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Distant hills gradient -->
+    <linearGradient id="distantHill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a9e5a"/>
+      <stop offset="100%" stop-color="#6b8f4a"/>
+    </linearGradient>
+    <!-- Mid hills gradient -->
+    <linearGradient id="midHill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a7a2a"/>
+      <stop offset="100%" stop-color="#3d6b22"/>
+    </linearGradient>
+    <!-- Foreground gradient -->
+    <linearGradient id="fgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a6518"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <!-- Tree canopy gradient -->
+    <radialGradient id="canopyMain" cx="0.45" cy="0.4" r="0.55">
+      <stop offset="0%" stop-color="#3d6b22"/>
+      <stop offset="60%" stop-color="#2D5016"/>
+      <stop offset="100%" stop-color="#1e3a0e"/>
+    </radialGradient>
+    <!-- Light rays -->
+    <linearGradient id="lightRay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Overlay for depth -->
+    <linearGradient id="bottomFade" x1="0" y1="0.7" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a0e" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1e3a0e" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)"/>
+
+  <!-- Sun glow effect -->
+  <rect width="1920" height="1080" fill="url(#sunGlow)"/>
+
+  <!-- Sun disc -->
+  <circle cx="1440" cy="195" r="70" fill="#fdf5d6" opacity="0.9"/>
+  <circle cx="1440" cy="195" r="55" fill="#fff8e1" opacity="0.95"/>
+
+  <!-- Wispy clouds -->
+  <g opacity="0.4">
+    <ellipse cx="400" cy="150" rx="180" ry="25" fill="white"/>
+    <ellipse cx="350" cy="145" rx="120" ry="30" fill="white"/>
+    <ellipse cx="480" cy="148" rx="100" ry="20" fill="white"/>
+  </g>
+  <g opacity="0.3">
+    <ellipse cx="1100" cy="120" rx="200" ry="20" fill="white"/>
+    <ellipse cx="1050" cy="115" rx="130" ry="25" fill="white"/>
+    <ellipse cx="1180" cy="118" rx="90" ry="18" fill="white"/>
+  </g>
+  <g opacity="0.25">
+    <ellipse cx="750" cy="200" rx="150" ry="18" fill="white"/>
+    <ellipse cx="700" cy="196" rx="100" ry="22" fill="white"/>
+  </g>
+
+  <!-- Distant mountains/hills -->
+  <path d="M0 650 Q200 480 400 550 Q550 490 700 530 Q850 460 1000 520 Q1150 470 1300 510 Q1500 440 1700 500 Q1800 480 1920 520 L1920 700 L0 700 Z" fill="url(#distantHill)" opacity="0.5"/>
+
+  <!-- Mid-ground hills -->
+  <path d="M0 700 Q150 580 350 640 Q500 570 700 620 Q900 560 1100 610 Q1300 550 1500 600 Q1700 560 1920 620 L1920 780 L0 780 Z" fill="url(#midHill)" opacity="0.7"/>
+
+  <!-- Small distant trees on mid hills -->
+  <g fill="#3a6518" opacity="0.6">
+    <path d="M200 640 l-8 0 l4 -18 Z"/>
+    <path d="M220 635 l-6 0 l3 -14 Z"/>
+    <path d="M260 638 l-7 0 l3.5 -16 Z"/>
+    <path d="M500 610 l-8 0 l4 -20 Z"/>
+    <path d="M520 608 l-6 0 l3 -15 Z"/>
+    <path d="M540 612 l-7 0 l3.5 -17 Z"/>
+    <path d="M800 600 l-9 0 l4.5 -22 Z"/>
+    <path d="M825 598 l-7 0 l3.5 -18 Z"/>
+    <path d="M1200 590 l-8 0 l4 -20 Z"/>
+    <path d="M1230 588 l-6 0 l3 -15 Z"/>
+    <path d="M1600 595 l-9 0 l4.5 -22 Z"/>
+    <path d="M1625 592 l-7 0 l3.5 -17 Z"/>
+    <path d="M1650 596 l-6 0 l3 -14 Z"/>
+  </g>
+
+  <!-- Foreground ground -->
+  <path d="M0 780 Q300 720 600 750 Q900 710 1200 740 Q1500 700 1920 730 L1920 1080 L0 1080 Z" fill="url(#fgGrad)"/>
+
+  <!-- Grass texture lines on foreground -->
+  <g stroke="#3a6518" stroke-width="1.5" opacity="0.3">
+    <path d="M100 850 q5 -15 2 -30" fill="none"/>
+    <path d="M110 852 q3 -12 0 -25" fill="none"/>
+    <path d="M300 830 q5 -15 2 -30" fill="none"/>
+    <path d="M310 832 q3 -12 0 -25" fill="none"/>
+    <path d="M600 820 q5 -15 2 -30" fill="none"/>
+    <path d="M610 822 q3 -12 0 -25" fill="none"/>
+    <path d="M900 810 q5 -15 2 -30" fill="none"/>
+    <path d="M1200 815 q5 -15 2 -30" fill="none"/>
+    <path d="M1500 808 q5 -15 2 -30" fill="none"/>
+    <path d="M1700 818 q5 -15 2 -30" fill="none"/>
+    <path d="M1850 825 q5 -15 2 -30" fill="none"/>
+  </g>
+
+  <!-- Main large tree (left-center) -->
+  <g transform="translate(480, 0)">
+    <!-- Tree shadow on ground -->
+    <ellipse cx="50" cy="760" rx="200" ry="30" fill="#1e3a0e" opacity="0.3"/>
+    <!-- Trunk -->
+    <path d="M20 760 Q15 650 25 500 Q30 480 35 500 Q40 550 38 600 L55 760 Z" fill="#6B4226"/>
+    <!-- Trunk bark texture -->
+    <path d="M28 700 Q32 695 30 680" stroke="#5a3720" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M32 640 Q36 630 33 615" stroke="#5a3720" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M30 580 Q34 570 31 555" stroke="#5a3720" stroke-width="2" fill="none" opacity="0.5"/>
+    <!-- Main branch left -->
+    <path d="M28 550 Q-20 480 -80 430" stroke="#6B4226" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M-50 460 Q-90 420 -120 380" stroke="#6B4226" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <!-- Main branch right -->
+    <path d="M35 520 Q90 440 150 400" stroke="#6B4226" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <path d="M120 420 Q160 370 180 340" stroke="#6B4226" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- Small branches -->
+    <path d="M30 600 Q-10 570 -30 540" stroke="#6B4226" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M38 580 Q70 540 90 510" stroke="#6B4226" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Canopy mass -->
+    <ellipse cx="30" cy="380" rx="200" ry="160" fill="url(#canopyMain)"/>
+    <ellipse cx="-30" cy="350" rx="130" ry="120" fill="#2D5016"/>
+    <ellipse cx="100" cy="340" rx="140" ry="130" fill="#2D5016"/>
+    <ellipse cx="30" cy="300" rx="150" ry="110" fill="#335e18"/>
+    <ellipse cx="-60" cy="320" rx="100" ry="90" fill="#2a4c14"/>
+    <ellipse cx="130" cy="310" rx="110" ry="100" fill="#2a4c14"/>
+    <!-- Canopy highlights -->
+    <ellipse cx="10" cy="280" rx="80" ry="55" fill="#3d6b22" opacity="0.7"/>
+    <ellipse cx="90" cy="290" rx="70" ry="50" fill="#3d6b22" opacity="0.5"/>
+    <ellipse cx="-40" cy="310" rx="50" ry="40" fill="#457525" opacity="0.4"/>
+    <!-- Leaf detail clusters -->
+    <circle cx="-80" cy="340" r="30" fill="#2D5016"/>
+    <circle cx="160" cy="330" r="35" fill="#2D5016"/>
+    <circle cx="30" cy="230" r="40" fill="#3a6518"/>
+    <circle cx="-20" cy="260" r="35" fill="#335e18"/>
+    <circle cx="80" cy="250" r="38" fill="#335e18"/>
+    <!-- Exposed roots -->
+    <path d="M15 760 Q-20 770 -50 765 Q-30 755 15 758" fill="#6B4226"/>
+    <path d="M55 760 Q85 770 110 762 Q90 755 55 758" fill="#6B4226"/>
+  </g>
+
+  <!-- Second smaller tree (right side) -->
+  <g transform="translate(1350, 50)">
+    <ellipse cx="20" cy="710" rx="80" ry="15" fill="#1e3a0e" opacity="0.25"/>
+    <path d="M12 710 Q10 620 15 520 Q18 510 20 520 Q22 560 21 610 L28 710 Z" fill="#6B4226"/>
+    <path d="M16 560 Q-10 510 -40 470" stroke="#6B4226" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M19 540 Q50 490 70 450" stroke="#6B4226" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="20" cy="430" rx="110" ry="90" fill="#2D5016"/>
+    <ellipse cx="-10" cy="410" rx="75" ry="70" fill="#2a4c14"/>
+    <ellipse cx="55" cy="400" rx="80" ry="75" fill="#2a4c14"/>
+    <ellipse cx="20" cy="370" rx="80" ry="60" fill="#335e18"/>
+    <circle cx="20" cy="350" r="35" fill="#3a6518" opacity="0.6"/>
+  </g>
+
+  <!-- Small tree far right -->
+  <g transform="translate(1700, 100)">
+    <path d="M8 680 Q7 620 10 560 L15 680 Z" fill="#6B4226"/>
+    <ellipse cx="11" cy="530" rx="50" ry="45" fill="#2D5016"/>
+    <ellipse cx="11" cy="510" rx="35" ry="35" fill="#335e18"/>
+  </g>
+
+  <!-- Light rays through scene -->
+  <g opacity="0.12">
+    <polygon points="1440,195 1300,1080 1380,1080" fill="url(#lightRay)"/>
+    <polygon points="1440,195 1480,1080 1560,1080" fill="url(#lightRay)"/>
+    <polygon points="1440,195 1600,1080 1700,1080" fill="url(#lightRay)"/>
+  </g>
+
+  <!-- Bottom fade for depth -->
+  <rect y="600" width="1920" height="480" fill="url(#bottomFade)"/>
+
+  <!-- Golden hour warm overlay at bottom -->
+  <rect y="900" width="1920" height="180" fill="#D4A843" opacity="0.06"/>
+</svg>

@@ -1,0 +1,136 @@
+/* ========================================
+   Hero Section
+   ======================================== */
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
+
+/* ---- Background Image ---- */
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4);
+}
+
+/* ---- Overlay ---- */
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(45, 80, 22, 0.85), rgba(45, 80, 22, 0.6));
+}
+
+/* ---- Content ---- */
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  color: var(--color-text-light);
+  max-width: 700px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+  }
+}
+
+/* ---- Badge ---- */
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  padding: 0.375rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Title ---- */
+
+.hero__title {
+  font-size: 2.5rem;
+  color: var(--color-text-light);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
+}
+
+/* ---- Subtitle ---- */
+
+.hero__subtitle {
+  font-size: 1.125rem;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+@media (min-width: 1024px) {
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* ---- CTAs ---- */
+
+.hero__ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hero__ctas {
+    justify-content: flex-start;
+  }
+}
+
+/* ---- Trust Badges ---- */
+
+.hero__badges {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hero__badges {
+    justify-content: flex-start;
+  }
+}
+
+.hero__badges .badge {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--color-text-light);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,149 @@
+/* ========================================
+   Footer
+   ======================================== */
+
+.footer {
+  background-color: #1A1A1A;
+  color: #CCCCCC;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+/* ---- Footer Grid ---- */
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ---- Footer Brand Column ---- */
+
+.footer__logo {
+  height: 45px;
+  width: auto;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+  border-radius: 0;
+}
+
+.footer__desc {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #AAAAAA;
+}
+
+/* ---- Footer Column Headings ---- */
+
+.footer__heading {
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  font-family: var(--font-heading);
+}
+
+/* ---- Footer Links ---- */
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__links li {
+  margin-bottom: 0.125rem;
+}
+
+.footer__links a {
+  color: #CCCCCC;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  display: block;
+  transition: color var(--transition-base);
+}
+
+.footer__links a:hover {
+  color: var(--color-accent);
+}
+
+/* ---- Footer Contact ---- */
+
+.footer__contact address {
+  font-style: normal;
+}
+
+.footer__contact p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.footer__contact a {
+  color: #CCCCCC;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.footer__contact a:hover {
+  color: var(--color-accent);
+}
+
+/* ---- Social Links ---- */
+
+.footer__social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.footer__social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: all var(--transition-base);
+}
+
+.footer__social a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.footer__social svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---- Footer Bottom ---- */
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #888888;
+}
+
+.footer__bottom a {
+  color: #AAAAAA;
+  transition: color var(--transition-base);
+}
+
+.footer__bottom a:hover {
+  color: var(--color-accent);
+}

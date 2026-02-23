@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7BB3E0"/>
+      <stop offset="100%" stop-color="#C5DFF0"/>
+    </linearGradient>
+    <linearGradient id="grass5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A7A2E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <radialGradient id="stumpTop" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#D4A843"/>
+      <stop offset="40%" stop-color="#B8923A"/>
+      <stop offset="100%" stop-color="#6B4226"/>
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="300" fill="url(#sky5)"/>
+  <!-- Background fence -->
+  <rect x="0" y="150" width="400" height="5" fill="#8B7355"/>
+  <rect x="20" y="130" width="5" height="40" fill="#8B7355"/>
+  <rect x="70" y="130" width="5" height="40" fill="#8B7355"/>
+  <rect x="120" y="130" width="5" height="40" fill="#8B7355"/>
+  <rect x="170" y="130" width="5" height="40" fill="#8B7355"/>
+  <rect x="280" y="130" width="5" height="40" fill="#8B7355"/>
+  <rect x="330" y="130" width="5" height="40" fill="#8B7355"/>
+  <rect x="380" y="130" width="5" height="40" fill="#8B7355"/>
+  <!-- Background trees -->
+  <ellipse cx="50" cy="100" rx="40" ry="50" fill="#2D5016" opacity="0.5"/>
+  <ellipse cx="350" cy="95" rx="45" ry="55" fill="#2D5016" opacity="0.5"/>
+  <!-- Ground -->
+  <rect x="0" y="200" width="400" height="100" fill="url(#grass5)"/>
+  <!-- Stump -->
+  <ellipse cx="180" cy="200" rx="40" ry="12" fill="url(#stumpTop)"/>
+  <rect x="140" y="200" width="80" height="25" fill="#6B4226"/>
+  <ellipse cx="180" cy="225" rx="40" ry="8" fill="#5A3620"/>
+  <!-- Tree rings on stump -->
+  <ellipse cx="180" cy="200" rx="30" ry="8" fill="none" stroke="#B8923A" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="180" cy="200" rx="20" ry="5" fill="none" stroke="#B8923A" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="180" cy="200" rx="10" ry="3" fill="none" stroke="#B8923A" stroke-width="1" opacity="0.6"/>
+  <!-- Stump grinder machine -->
+  <g transform="translate(230, 170)">
+    <!-- Machine body -->
+    <rect x="0" y="20" width="80" height="35" fill="#D4A843" rx="3"/>
+    <rect x="5" y="15" width="30" height="10" fill="#B8923A" rx="2"/>
+    <!-- Engine housing -->
+    <rect x="45" y="5" width="30" height="20" fill="#6B4226" rx="3"/>
+    <rect x="50" y="0" width="20" height="8" fill="#555" rx="2"/>
+    <!-- Cutting wheel arm -->
+    <rect x="-30" y="30" width="35" height="8" fill="#888" rx="2"/>
+    <!-- Cutting wheel -->
+    <circle cx="-35" cy="34" r="12" fill="#666"/>
+    <circle cx="-35" cy="34" r="8" fill="#888"/>
+    <!-- Wheel teeth -->
+    <g fill="#D4A843">
+      <rect x="-38" y="22" width="3" height="4" transform="rotate(0,-35,34)"/>
+      <rect x="-38" y="22" width="3" height="4" transform="rotate(45,-35,34)"/>
+      <rect x="-38" y="22" width="3" height="4" transform="rotate(90,-35,34)"/>
+      <rect x="-38" y="22" width="3" height="4" transform="rotate(135,-35,34)"/>
+      <rect x="-38" y="22" width="3" height="4" transform="rotate(180,-35,34)"/>
+      <rect x="-38" y="22" width="3" height="4" transform="rotate(225,-35,34)"/>
+      <rect x="-38" y="22" width="3" height="4" transform="rotate(270,-35,34)"/>
+      <rect x="-38" y="22" width="3" height="4" transform="rotate(315,-35,34)"/>
+    </g>
+    <!-- Wheels -->
+    <circle cx="15" cy="60" r="10" fill="#333"/>
+    <circle cx="65" cy="60" r="10" fill="#333"/>
+    <circle cx="15" cy="60" r="4" fill="#666"/>
+    <circle cx="65" cy="60" r="4" fill="#666"/>
+    <!-- Handle -->
+    <line x1="75" y1="20" x2="100" y2="10" stroke="#6B4226" stroke-width="4" stroke-linecap="round"/>
+    <line x1="100" y1="10" x2="100" y2="35" stroke="#6B4226" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- Wood chips flying -->
+  <g fill="#D4A843">
+    <circle cx="160" cy="185" r="3" opacity="0.8"/>
+    <circle cx="150" cy="175" r="2" opacity="0.7"/>
+    <circle cx="170" cy="170" r="2.5" opacity="0.6"/>
+    <circle cx="145" cy="190" r="2" opacity="0.7"/>
+    <circle cx="155" cy="165" r="1.5" opacity="0.5"/>
+    <circle cx="165" cy="180" r="2" opacity="0.8"/>
+    <circle cx="140" cy="180" r="3" opacity="0.6"/>
+    <circle cx="175" cy="175" r="1.5" opacity="0.5"/>
+    <circle cx="135" cy="170" r="2" opacity="0.4"/>
+    <circle cx="148" cy="160" r="2.5" opacity="0.4"/>
+  </g>
+  <!-- Scattered chips on ground -->
+  <g fill="#D4A843" opacity="0.5">
+    <circle cx="120" cy="215" r="2"/>
+    <circle cx="140" cy="220" r="1.5"/>
+    <circle cx="160" cy="218" r="2.5"/>
+    <circle cx="200" cy="222" r="2"/>
+    <circle cx="130" cy="225" r="1.8"/>
+    <circle cx="175" cy="228" r="2"/>
+    <circle cx="155" cy="230" r="1.5"/>
+    <circle cx="190" cy="215" r="1.8"/>
+  </g>
+  <!-- Sawdust cloud -->
+  <ellipse cx="170" cy="195" rx="30" ry="12" fill="#D4A843" opacity="0.2"/>
+</svg>

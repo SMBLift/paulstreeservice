@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky12" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9FD4"/>
+      <stop offset="100%" stop-color="#BDE0F5"/>
+    </linearGradient>
+    <linearGradient id="grass12" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A8A3E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="hedge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3D6B1E"/>
+      <stop offset="50%" stop-color="#2D5016"/>
+      <stop offset="100%" stop-color="#1A3009"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="300" fill="url(#sky12)"/>
+  <!-- Clouds -->
+  <ellipse cx="100" cy="35" rx="50" ry="16" fill="white" opacity="0.6"/>
+  <ellipse cx="300" cy="50" rx="40" ry="14" fill="white" opacity="0.5"/>
+  <!-- House -->
+  <rect x="220" y="60" width="160" height="130" fill="#F5F2EE"/>
+  <polygon points="220,60 300,15 380,60" fill="#6B4226"/>
+  <rect x="250" y="85" width="25" height="30" fill="#87CEEB" opacity="0.5"/>
+  <rect x="300" y="85" width="25" height="30" fill="#87CEEB" opacity="0.5"/>
+  <rect x="350" y="85" width="25" height="30" fill="#87CEEB" opacity="0.5"/>
+  <rect x="285" y="140" width="30" height="50" fill="#6B4226"/>
+  <!-- Window shutters -->
+  <rect x="245" y="85" width="5" height="30" fill="#2D5016"/>
+  <rect x="275" y="85" width="5" height="30" fill="#2D5016"/>
+  <rect x="295" y="85" width="5" height="30" fill="#2D5016"/>
+  <rect x="325" y="85" width="5" height="30" fill="#2D5016"/>
+  <!-- Ground / lawn -->
+  <rect x="0" y="210" width="400" height="90" fill="url(#grass12)"/>
+  <!-- Walkway -->
+  <path d="M285,190 L285,220 Q285,240 270,250 L240,270" fill="none" stroke="#C8C0B5" stroke-width="20" opacity="0.5"/>
+  <!-- Row of beautifully shaped hedges -->
+  <!-- Hedge 1 - Round ball -->
+  <ellipse cx="50" cy="185" rx="30" ry="30" fill="url(#hedge)"/>
+  <ellipse cx="50" cy="175" rx="22" ry="18" fill="#3D6B1E" opacity="0.6"/>
+  <rect x="47" y="210" width="6" height="10" fill="#6B4226"/>
+  <!-- Hedge 2 - Tall rectangle/column -->
+  <rect x="100" y="145" width="35" height="65" fill="url(#hedge)" rx="3"/>
+  <rect x="103" y="148" width="29" height="15" fill="#3D6B1E" opacity="0.4"/>
+  <!-- Hedge 3 - Cone/pyramid -->
+  <polygon points="175,140 155,210 195,210" fill="url(#hedge)"/>
+  <polygon points="175,150 162,200 188,200" fill="#3D6B1E" opacity="0.4"/>
+  <!-- Hedge 4 - Round ball (larger) -->
+  <ellipse cx="240" cy="178" rx="28" ry="32" fill="url(#hedge)"/>
+  <ellipse cx="240" cy="168" rx="20" ry="20" fill="#3D6B1E" opacity="0.5"/>
+  <!-- Hedge 5 - Low rectangular hedge wall along house -->
+  <rect x="280" y="185" width="100" height="25" fill="url(#hedge)" rx="4"/>
+  <rect x="283" y="187" width="94" height="8" fill="#3D6B1E" opacity="0.4"/>
+  <!-- Shadow under hedges -->
+  <ellipse cx="50" cy="212" rx="25" ry="5" fill="#1A3009" opacity="0.2"/>
+  <ellipse cx="117" cy="212" rx="18" ry="4" fill="#1A3009" opacity="0.2"/>
+  <ellipse cx="175" cy="212" rx="20" ry="4" fill="#1A3009" opacity="0.2"/>
+  <ellipse cx="240" cy="212" rx="22" ry="5" fill="#1A3009" opacity="0.2"/>
+  <!-- Hedge trimming clippings on ground -->
+  <g fill="#3D6B1E" opacity="0.4">
+    <circle cx="70" cy="220" r="1.5"/>
+    <circle cx="85" cy="218" r="1"/>
+    <circle cx="140" cy="222" r="1.5"/>
+    <circle cx="160" cy="216" r="1"/>
+    <circle cx="195" cy="220" r="1.5"/>
+    <circle cx="210" cy="218" r="1"/>
+  </g>
+  <!-- Flower bed in front of house -->
+  <g>
+    <ellipse cx="350" cy="205" rx="25" ry="6" fill="#2D5016" opacity="0.4"/>
+    <circle cx="340" cy="200" r="4" fill="#D44A4A" opacity="0.6"/>
+    <circle cx="350" cy="198" r="3.5" fill="#E06080" opacity="0.5"/>
+    <circle cx="360" cy="201" r="4" fill="#D4A843" opacity="0.5"/>
+    <circle cx="345" cy="203" r="3" fill="#E06080" opacity="0.5"/>
+  </g>
+  <!-- Hedge trimmer on ground -->
+  <g transform="translate(100, 225) rotate(-20)">
+    <rect x="0" y="0" width="30" height="5" fill="#D4A843" rx="1"/>
+    <rect x="30" y="-1" width="20" height="7" fill="#888" rx="1"/>
+    <!-- Teeth -->
+    <g fill="#888">
+      <rect x="30" y="-3" width="2" height="2"/>
+      <rect x="34" y="-3" width="2" height="2"/>
+      <rect x="38" y="-3" width="2" height="2"/>
+      <rect x="42" y="-3" width="2" height="2"/>
+      <rect x="46" y="-3" width="2" height="2"/>
+    </g>
+  </g>
+</svg>

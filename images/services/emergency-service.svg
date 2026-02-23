@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="stormSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A2A3A"/>
+      <stop offset="40%" stop-color="#2A3A4A"/>
+      <stop offset="100%" stop-color="#3A4A5A"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D4016"/>
+      <stop offset="100%" stop-color="#1A2D0E"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4A2E16"/>
+      <stop offset="50%" stop-color="#5A3A1A"/>
+      <stop offset="100%" stop-color="#3A2210"/>
+    </linearGradient>
+    <linearGradient id="lightning" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A5A6A"/>
+      <stop offset="100%" stop-color="#2A3540"/>
+    </linearGradient>
+    <radialGradient id="lightningGlow" cx="0.5" cy="0.3" r="0.5">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark stormy sky -->
+  <rect width="600" height="400" fill="url(#stormSky)"/>
+
+  <!-- Storm clouds -->
+  <g fill="url(#cloudGrad)">
+    <ellipse cx="150" cy="40" rx="120" ry="40"/>
+    <ellipse cx="100" cy="50" rx="80" ry="35"/>
+    <ellipse cx="220" cy="45" rx="90" ry="38"/>
+    <ellipse cx="350" cy="35" rx="110" ry="42"/>
+    <ellipse cx="300" cy="50" rx="70" ry="30"/>
+    <ellipse cx="450" cy="40" rx="100" ry="38"/>
+    <ellipse cx="500" cy="55" rx="80" ry="30"/>
+    <ellipse cx="50" cy="55" rx="60" ry="25"/>
+    <ellipse cx="550" cy="45" rx="70" ry="32"/>
+  </g>
+  <!-- Darker cloud undersides -->
+  <g fill="#1A2530" opacity="0.5">
+    <ellipse cx="150" cy="60" rx="100" ry="25"/>
+    <ellipse cx="350" cy="55" rx="90" ry="22"/>
+    <ellipse cx="500" cy="60" rx="70" ry="20"/>
+  </g>
+
+  <!-- Lightning glow -->
+  <circle cx="160" cy="80" r="120" fill="url(#lightningGlow)"/>
+
+  <!-- Lightning bolt -->
+  <g filter="url(#glow)">
+    <polygon points="170,60 155,120 170,115 150,180 165,175 140,240 180,160 160,165 180,110 165,115" fill="url(#lightning)" opacity="0.9"/>
+  </g>
+  <!-- Secondary lightning in background -->
+  <polygon points="450,30 445,70 452,67 440,110" fill="#D4A843" opacity="0.2"/>
+
+  <!-- Rain -->
+  <g stroke="#8899AA" stroke-width="1" opacity="0.3">
+    <line x1="50" y1="70" x2="40" y2="120"/>
+    <line x1="100" y1="80" x2="90" y2="130"/>
+    <line x1="200" y1="60" x2="190" y2="110"/>
+    <line x1="250" y1="75" x2="240" y2="125"/>
+    <line x1="300" y1="65" x2="290" y2="115"/>
+    <line x1="350" y1="80" x2="340" y2="130"/>
+    <line x1="400" y1="70" x2="390" y2="120"/>
+    <line x1="500" y1="60" x2="490" y2="110"/>
+    <line x1="550" y1="75" x2="540" y2="125"/>
+    <line x1="75" y1="130" x2="65" y2="180"/>
+    <line x1="130" y1="140" x2="120" y2="190"/>
+    <line x1="180" y1="120" x2="170" y2="170"/>
+    <line x1="280" y1="135" x2="270" y2="185"/>
+    <line x1="330" y1="125" x2="320" y2="175"/>
+    <line x1="420" y1="130" x2="410" y2="180"/>
+    <line x1="480" y1="120" x2="470" y2="170"/>
+    <line x1="530" y1="140" x2="520" y2="190"/>
+    <line x1="60" y1="200" x2="50" y2="250"/>
+    <line x1="220" y1="190" x2="210" y2="240"/>
+    <line x1="370" y1="195" x2="360" y2="245"/>
+    <line x1="450" y1="200" x2="440" y2="250"/>
+    <line x1="560" y1="185" x2="550" y2="235"/>
+  </g>
+
+  <!-- Ground (darker, wet) -->
+  <rect x="0" y="300" width="600" height="100" fill="url(#ground)"/>
+  <ellipse cx="300" cy="305" rx="320" ry="15" fill="#2D4016"/>
+
+  <!-- Fence posts -->
+  <g fill="#6B4226">
+    <rect x="50" y="270" width="8" height="50" rx="1"/>
+    <rect x="120" y="270" width="8" height="50" rx="1"/>
+    <rect x="190" y="270" width="8" height="50" rx="1"/>
+    <!-- Fence rails -->
+    <rect x="50" y="280" width="148" height="5" rx="1"/>
+    <rect x="50" y="295" width="148" height="5" rx="1"/>
+    <!-- Broken fence section -->
+    <rect x="190" y="270" width="8" height="50" rx="1"/>
+  </g>
+  <!-- Broken fence pieces -->
+  <g fill="#6B4226" opacity="0.8">
+    <rect x="200" y="290" width="40" height="4" rx="1" transform="rotate(25, 220, 292)"/>
+    <rect x="210" y="300" width="35" height="4" rx="1" transform="rotate(-15, 227, 302)"/>
+    <rect x="230" y="280" width="5" height="25" rx="1" transform="rotate(30, 232, 292)"/>
+  </g>
+
+  <!-- Fallen tree across fence -->
+  <g>
+    <!-- Trunk of fallen tree -->
+    <rect x="180" y="230" width="320" height="35" rx="8" fill="url(#trunk)" transform="rotate(-12, 340, 247)"/>
+    <!-- Bark texture -->
+    <g stroke="#3A2210" stroke-width="1" opacity="0.4" transform="rotate(-12, 340, 247)">
+      <line x1="200" y1="238" x2="200" y2="258"/>
+      <line x1="250" y1="235" x2="250" y2="260"/>
+      <line x1="300" y1="235" x2="300" y2="260"/>
+      <line x1="350" y1="234" x2="350" y2="258"/>
+      <line x1="400" y1="233" x2="400" y2="258"/>
+      <line x1="450" y1="232" x2="450" y2="258"/>
+    </g>
+
+    <!-- Root ball (right side, upturned) -->
+    <g transform="translate(500, 200)">
+      <ellipse cx="0" cy="10" rx="40" ry="50" fill="#3A2210"/>
+      <ellipse cx="0" cy="10" rx="35" ry="45" fill="#4A3220"/>
+      <!-- Dirt and roots -->
+      <g fill="#5A4230" opacity="0.7">
+        <circle cx="-15" cy="-20" r="8"/>
+        <circle cx="10" cy="-25" r="6"/>
+        <circle cx="20" cy="-10" r="7"/>
+        <circle cx="-20" cy="5" r="5"/>
+      </g>
+      <!-- Root tendrils -->
+      <g stroke="#6B4226" stroke-width="3" fill="none" stroke-linecap="round">
+        <path d="M-25,-30 Q-40,-45 -35,-55"/>
+        <path d="M15,-35 Q25,-50 20,-60"/>
+        <path d="M30,-15 Q45,-25 50,-35"/>
+        <path d="M-30,15 Q-45,10 -50,0"/>
+      </g>
+    </g>
+
+    <!-- Canopy of fallen tree (left side, on ground) -->
+    <g transform="translate(200, 260)">
+      <ellipse cx="-20" cy="20" rx="60" ry="40" fill="#1A3D0E"/>
+      <ellipse cx="0" cy="10" rx="50" ry="35" fill="#2D4016"/>
+      <ellipse cx="-30" cy="30" rx="40" ry="25" fill="#1A3D0E"/>
+      <!-- Some broken branches sticking up -->
+      <line x1="10" y1="0" x2="15" y2="-20" stroke="#4A2E16" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-20" y1="5" x2="-25" y2="-15" stroke="#4A2E16" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Standing damaged tree in background -->
+  <g transform="translate(450, 120)" opacity="0.5">
+    <rect x="-8" y="0" width="16" height="180" fill="#4A2E16"/>
+    <!-- Broken top -->
+    <polygon points="-8,0 0,-15 8,0" fill="#5A3A1A"/>
+    <!-- Remaining sparse canopy -->
+    <ellipse cx="20" cy="30" rx="25" ry="18" fill="#1A3D0E"/>
+    <ellipse cx="-15" cy="50" rx="20" ry="15" fill="#2D4016"/>
+  </g>
+
+  <!-- Puddles on ground -->
+  <g fill="#3A5A6A" opacity="0.3">
+    <ellipse cx="100" cy="340" rx="30" ry="6"/>
+    <ellipse cx="350" cy="350" rx="25" ry="5"/>
+    <ellipse cx="500" cy="345" rx="20" ry="4"/>
+  </g>
+
+  <!-- Debris on ground -->
+  <g fill="#2D4016" opacity="0.5">
+    <ellipse cx="80" cy="330" rx="8" ry="4" transform="rotate(15, 80, 330)"/>
+    <ellipse cx="300" cy="335" rx="6" ry="3" transform="rotate(-20, 300, 335)"/>
+    <ellipse cx="420" cy="340" rx="5" ry="2" transform="rotate(30, 420, 340)"/>
+  </g>
+  <!-- Small branches/sticks -->
+  <g stroke="#4A2E16" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <line x1="130" y1="325" x2="150" y2="320"/>
+    <line x1="380" y1="330" x2="400" y2="328"/>
+    <line x1="250" y1="340" x2="265" y2="335"/>
+  </g>
+
+  <!-- Warning/urgency indicator - subtle glow at horizon -->
+  <rect x="0" y="280" width="600" height="5" fill="#D4A843" opacity="0.1"/>
+</svg>

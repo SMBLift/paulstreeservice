@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="50%" stop-color="#A8D4F0"/>
+      <stop offset="100%" stop-color="#F5F2EE"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9A35"/>
+      <stop offset="100%" stop-color="#4A7A2E"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5A3A1A"/>
+      <stop offset="50%" stop-color="#6B4226"/>
+      <stop offset="100%" stop-color="#4A2E16"/>
+    </linearGradient>
+    <linearGradient id="canopyL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A8A2A"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="canopyR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3D7A22"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="cable" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#888"/>
+      <stop offset="50%" stop-color="#AAA"/>
+      <stop offset="100%" stop-color="#888"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#sky)"/>
+
+  <!-- Soft clouds -->
+  <g fill="white" opacity="0.4">
+    <ellipse cx="80" cy="50" rx="50" ry="18"/>
+    <ellipse cx="110" cy="45" rx="35" ry="14"/>
+    <ellipse cx="480" cy="60" rx="45" ry="16"/>
+    <ellipse cx="510" cy="55" rx="30" ry="12"/>
+  </g>
+
+  <!-- Background trees (soft, faded) -->
+  <g opacity="0.2">
+    <ellipse cx="50" cy="230" rx="40" ry="55" fill="#2D5016"/>
+    <ellipse cx="100" cy="240" rx="35" ry="45" fill="#3D6B1E"/>
+    <ellipse cx="520" cy="235" rx="38" ry="50" fill="#2D5016"/>
+    <ellipse cx="570" cy="245" rx="35" ry="40" fill="#3D6B1E"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="330" width="600" height="70" fill="url(#ground)"/>
+  <ellipse cx="300" cy="335" rx="320" ry="15" fill="#5A9A35"/>
+
+  <!-- Main tree - split trunk (V-shape codominant stems) -->
+  <g>
+    <!-- Base trunk -->
+    <path d="M265,340 L260,260 Q260,240 255,230 L255,230 Q270,210 300,210 Q330,210 345,230 L345,230 Q340,240 340,260 L335,340 Z" fill="url(#trunk)"/>
+
+    <!-- Split point (crotch) -->
+    <ellipse cx="300" cy="220" rx="25" ry="8" fill="#5A3A1A"/>
+
+    <!-- Left stem -->
+    <path d="M260,230 Q240,180 220,100 L210,100 Q215,95 225,90 L245,90 Q255,95 260,100 L255,100 Q268,180 275,220 Z" fill="url(#trunk)"/>
+    <!-- Left stem bark texture -->
+    <g stroke="#4A2E16" stroke-width="1" opacity="0.3">
+      <line x1="230" y1="100" x2="262" y2="220"/>
+      <line x1="240" y1="95" x2="268" y2="215"/>
+    </g>
+
+    <!-- Right stem -->
+    <path d="M325,220 Q332,180 340,100 L345,100 Q350,95 355,90 L375,90 Q385,95 380,100 L390,100 Q358,180 340,230 Z" fill="url(#trunk)"/>
+    <!-- Right stem bark texture -->
+    <g stroke="#4A2E16" stroke-width="1" opacity="0.3">
+      <line x1="360" y1="100" x2="335" y2="215"/>
+      <line x1="370" y1="95" x2="338" y2="220"/>
+    </g>
+
+    <!-- Base trunk bark texture -->
+    <g stroke="#4A2E16" stroke-width="1.5" opacity="0.3">
+      <line x1="280" y1="340" x2="270" y2="240"/>
+      <line x1="300" y1="340" x2="300" y2="230"/>
+      <line x1="320" y1="340" x2="330" y2="240"/>
+    </g>
+
+    <!-- Left canopy -->
+    <ellipse cx="235" cy="75" rx="70" ry="55" fill="url(#canopyL)"/>
+    <ellipse cx="215" cy="65" rx="45" ry="38" fill="#3D6B1E"/>
+    <ellipse cx="255" cy="80" rx="40" ry="30" fill="#2D5016"/>
+    <ellipse cx="235" cy="55" rx="50" ry="30" fill="#3D6B1E"/>
+    <!-- Highlights -->
+    <ellipse cx="220" cy="60" rx="20" ry="15" fill="#4A8A2A" opacity="0.4"/>
+
+    <!-- Right canopy -->
+    <ellipse cx="370" cy="70" rx="65" ry="50" fill="url(#canopyR)"/>
+    <ellipse cx="390" cy="60" rx="42" ry="35" fill="#3D6B1E"/>
+    <ellipse cx="350" cy="75" rx="38" ry="28" fill="#2D5016"/>
+    <ellipse cx="370" cy="50" rx="48" ry="28" fill="#3D6B1E"/>
+    <!-- Highlights -->
+    <ellipse cx="380" cy="55" rx="18" ry="14" fill="#4A8A2A" opacity="0.4"/>
+
+    <!-- Branches from left stem -->
+    <g stroke="#6B4226" stroke-width="5" fill="none" stroke-linecap="round">
+      <path d="M230,130 Q200,120 180,100"/>
+      <path d="M240,160 Q210,155 190,140"/>
+    </g>
+
+    <!-- Branches from right stem -->
+    <g stroke="#6B4226" stroke-width="5" fill="none" stroke-linecap="round">
+      <path d="M365,125 Q395,115 415,100"/>
+      <path d="M355,155 Q385,150 405,140"/>
+    </g>
+  </g>
+
+  <!-- CABLES - the main feature -->
+  <g>
+    <!-- Main cable between stems (upper) -->
+    <path d="M245,120 Q300,110 355,115" fill="none" stroke="url(#cable)" stroke-width="3.5"/>
+    <!-- Cable highlights -->
+    <path d="M245,120 Q300,110 355,115" fill="none" stroke="#CCC" stroke-width="1" opacity="0.5"/>
+
+    <!-- Second cable (lower) -->
+    <path d="M255,160 Q300,152 345,155" fill="none" stroke="url(#cable)" stroke-width="3"/>
+    <path d="M255,160 Q300,152 345,155" fill="none" stroke="#CCC" stroke-width="1" opacity="0.5"/>
+
+    <!-- Cable anchors/eye bolts on left stem -->
+    <g>
+      <!-- Upper anchor -->
+      <circle cx="245" cy="120" r="6" fill="#888"/>
+      <circle cx="245" cy="120" r="4" fill="#AAA"/>
+      <circle cx="245" cy="120" r="2" fill="#888"/>
+      <!-- Anchor plate -->
+      <rect x="238" y="116" width="4" height="8" rx="1" fill="#777"/>
+
+      <!-- Lower anchor -->
+      <circle cx="255" cy="160" r="5" fill="#888"/>
+      <circle cx="255" cy="160" r="3.5" fill="#AAA"/>
+      <circle cx="255" cy="160" r="1.5" fill="#888"/>
+      <rect x="248" y="157" width="4" height="6" rx="1" fill="#777"/>
+    </g>
+
+    <!-- Cable anchors on right stem -->
+    <g>
+      <!-- Upper anchor -->
+      <circle cx="355" cy="115" r="6" fill="#888"/>
+      <circle cx="355" cy="115" r="4" fill="#AAA"/>
+      <circle cx="355" cy="115" r="2" fill="#888"/>
+      <rect x="358" y="111" width="4" height="8" rx="1" fill="#777"/>
+
+      <!-- Lower anchor -->
+      <circle cx="345" cy="155" r="5" fill="#888"/>
+      <circle cx="345" cy="155" r="3.5" fill="#AAA"/>
+      <circle cx="345" cy="155" r="1.5" fill="#888"/>
+      <rect x="348" y="152" width="4" height="6" rx="1" fill="#777"/>
+    </g>
+
+    <!-- Turnbuckle tensioner on upper cable -->
+    <g transform="translate(300, 114)">
+      <rect x="-12" y="-4" width="24" height="8" rx="2" fill="#999"/>
+      <rect x="-8" y="-3" width="16" height="6" rx="1" fill="#AAA"/>
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#888" stroke-width="1.5"/>
+      <circle cx="-12" cy="0" r="2" fill="#888"/>
+      <circle cx="12" cy="0" r="2" fill="#888"/>
+    </g>
+
+    <!-- Turnbuckle on lower cable -->
+    <g transform="translate(300, 156)">
+      <rect x="-10" y="-3.5" width="20" height="7" rx="2" fill="#999"/>
+      <rect x="-7" y="-2.5" width="14" height="5" rx="1" fill="#AAA"/>
+      <line x1="0" y1="-3.5" x2="0" y2="3.5" stroke="#888" stroke-width="1.5"/>
+      <circle cx="-10" cy="0" r="1.5" fill="#888"/>
+      <circle cx="10" cy="0" r="1.5" fill="#888"/>
+    </g>
+  </g>
+
+  <!-- BRACE ROD (through the split point) -->
+  <g>
+    <line x1="268" y1="225" x2="332" y2="225" stroke="#999" stroke-width="4"/>
+    <line x1="268" y1="225" x2="332" y2="225" stroke="#BBB" stroke-width="1.5"/>
+    <!-- Washers and nuts -->
+    <circle cx="268" cy="225" r="5" fill="#888"/>
+    <circle cx="268" cy="225" r="3" fill="#AAA"/>
+    <rect x="260" y="222" width="5" height="6" rx="1" fill="#999"/>
+    <circle cx="332" cy="225" r="5" fill="#888"/>
+    <circle cx="332" cy="225" r="3" fill="#AAA"/>
+    <rect x="335" y="222" width="5" height="6" rx="1" fill="#999"/>
+  </g>
+
+  <!-- Zoom/detail callout for cable hardware -->
+  <g transform="translate(500, 160)">
+    <!-- Callout circle -->
+    <circle cx="0" cy="0" r="45" fill="white" opacity="0.9" stroke="#D4A843" stroke-width="2"/>
+    <!-- Magnified cable hardware -->
+    <g transform="scale(2.5) translate(0, 0)">
+      <!-- Cable strand detail -->
+      <line x1="-15" y1="0" x2="15" y2="0" stroke="#999" stroke-width="2"/>
+      <line x1="-15" y1="-0.5" x2="15" y2="-0.5" stroke="#BBB" stroke-width="0.5"/>
+      <!-- Eye bolt -->
+      <circle cx="-10" cy="0" r="3" fill="#888"/>
+      <circle cx="-10" cy="0" r="2" fill="#AAA"/>
+      <circle cx="-10" cy="0" r="1" fill="#888"/>
+      <!-- Anchor into wood -->
+      <rect x="-13" y="-1.5" width="2" height="3" rx="0.5" fill="#777"/>
+      <rect x="-15" y="-2" width="2" height="4" rx="0.5" fill="#6B4226"/>
+    </g>
+    <!-- Callout line -->
+    <line x1="-45" y1="10" x2="-110" y2="30" stroke="#D4A843" stroke-width="1.5" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- Healthy leaves falling gently (showing tree is thriving) -->
+  <g fill="#4A8A2A" opacity="0.3">
+    <ellipse cx="180" cy="200" rx="5" ry="2.5" transform="rotate(25, 180, 200)"/>
+    <ellipse cx="420" cy="190" rx="4" ry="2" transform="rotate(-35, 420, 190)"/>
+    <ellipse cx="300" cy="280" rx="4" ry="2" transform="rotate(15, 300, 280)"/>
+  </g>
+
+  <!-- Ground details -->
+  <g stroke="#4A7A2E" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4">
+    <path d="M100,345 Q102,335 104,345"/>
+    <path d="M150,348 Q152,338 154,348"/>
+    <path d="M450,346 Q452,336 454,346"/>
+    <path d="M500,349 Q502,339 504,349"/>
+  </g>
+
+  <!-- Root flare visible at base -->
+  <g fill="#6B4226">
+    <path d="M260,335 Q250,330 240,335 Q245,340 260,340 Z"/>
+    <path d="M340,335 Q350,330 360,335 Q355,340 340,340 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="60%" stop-color="#B8DFF0"/>
+      <stop offset="100%" stop-color="#F5F2EE"/>
+    </linearGradient>
+    <linearGradient id="lawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9A35"/>
+      <stop offset="100%" stop-color="#4A7A2E"/>
+    </linearGradient>
+    <linearGradient id="hedgeTrimmed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A8A2A"/>
+      <stop offset="40%" stop-color="#3D6B1E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="hedgeUntrimmed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9A35"/>
+      <stop offset="40%" stop-color="#4A7A2E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <linearGradient id="pathGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D8D0C4"/>
+      <stop offset="100%" stop-color="#C4BAA8"/>
+    </linearGradient>
+    <linearGradient id="houseWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F2EE"/>
+      <stop offset="100%" stop-color="#E8E0D4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#sky)"/>
+
+  <!-- Background - House -->
+  <g transform="translate(300, 80)">
+    <!-- House wall -->
+    <rect x="-120" y="0" width="240" height="140" fill="url(#houseWall)"/>
+    <!-- Roof -->
+    <polygon points="-140,0 0,-60 140,0" fill="#6B4226"/>
+    <polygon points="-130,0 0,-52 130,0" fill="#7A5030"/>
+    <!-- Windows -->
+    <rect x="-80" y="30" width="35" height="40" rx="2" fill="#6BAFE0" opacity="0.4"/>
+    <rect x="-80" y="30" width="35" height="40" rx="2" fill="none" stroke="#F5F2EE" stroke-width="2"/>
+    <line x1="-62" y1="30" x2="-62" y2="70" stroke="#F5F2EE" stroke-width="1.5"/>
+    <line x1="-80" y1="50" x2="-45" y2="50" stroke="#F5F2EE" stroke-width="1.5"/>
+
+    <rect x="45" y="30" width="35" height="40" rx="2" fill="#6BAFE0" opacity="0.4"/>
+    <rect x="45" y="30" width="35" height="40" rx="2" fill="none" stroke="#F5F2EE" stroke-width="2"/>
+    <line x1="62" y1="30" x2="62" y2="70" stroke="#F5F2EE" stroke-width="1.5"/>
+    <line x1="45" y1="50" x2="80" y2="50" stroke="#F5F2EE" stroke-width="1.5"/>
+
+    <!-- Door -->
+    <rect x="-15" y="70" width="30" height="50" rx="2" fill="#6B4226"/>
+    <circle cx="10" cy="98" r="2" fill="#D4A843"/>
+  </g>
+
+  <!-- Lawn -->
+  <rect x="0" y="260" width="600" height="140" fill="url(#lawn)"/>
+  <ellipse cx="300" cy="265" rx="320" ry="12" fill="#5A9A35"/>
+
+  <!-- Stone path -->
+  <path d="M270,260 Q280,320 285,400" fill="url(#pathGrad)" stroke="none"/>
+  <path d="M330,260 Q320,320 315,400" fill="url(#pathGrad)" stroke="none"/>
+  <!-- Path stones -->
+  <g fill="#C4BAA8" opacity="0.4">
+    <ellipse cx="300" cy="280" rx="20" ry="4"/>
+    <ellipse cx="298" cy="300" rx="18" ry="3"/>
+    <ellipse cx="300" cy="320" rx="17" ry="4"/>
+    <ellipse cx="299" cy="340" rx="16" ry="3"/>
+    <ellipse cx="300" cy="360" rx="15" ry="4"/>
+  </g>
+
+  <!-- RIGHT SIDE: Perfectly trimmed hedges -->
+  <g>
+    <!-- Hedge 1: Perfect rectangle -->
+    <rect x="340" y="220" width="60" height="55" rx="3" fill="url(#hedgeTrimmed)"/>
+    <!-- Top surface highlight -->
+    <rect x="340" y="220" width="60" height="8" rx="3" fill="#4A8A2A" opacity="0.4"/>
+    <!-- Subtle leaf texture -->
+    <g fill="#3D6B1E" opacity="0.3">
+      <circle cx="355" cy="240" r="4"/>
+      <circle cx="370" cy="250" r="3"/>
+      <circle cx="385" cy="235" r="4"/>
+      <circle cx="360" cy="260" r="3"/>
+      <circle cx="380" cy="255" r="3"/>
+    </g>
+
+    <!-- Hedge 2: Perfect rectangle -->
+    <rect x="410" y="220" width="60" height="55" rx="3" fill="url(#hedgeTrimmed)"/>
+    <rect x="410" y="220" width="60" height="8" rx="3" fill="#4A8A2A" opacity="0.4"/>
+    <g fill="#3D6B1E" opacity="0.3">
+      <circle cx="425" cy="240" r="4"/>
+      <circle cx="440" cy="250" r="3"/>
+      <circle cx="455" cy="235" r="4"/>
+      <circle cx="430" cy="260" r="3"/>
+      <circle cx="450" cy="255" r="3"/>
+    </g>
+
+    <!-- Hedge 3: Perfect rectangle -->
+    <rect x="480" y="220" width="60" height="55" rx="3" fill="url(#hedgeTrimmed)"/>
+    <rect x="480" y="220" width="60" height="8" rx="3" fill="#4A8A2A" opacity="0.4"/>
+    <g fill="#3D6B1E" opacity="0.3">
+      <circle cx="495" cy="240" r="4"/>
+      <circle cx="510" cy="250" r="3"/>
+      <circle cx="525" cy="235" r="4"/>
+      <circle cx="500" cy="260" r="3"/>
+      <circle cx="520" cy="255" r="3"/>
+    </g>
+
+    <!-- Neat mulch line under trimmed hedges -->
+    <rect x="338" y="273" width="204" height="6" rx="2" fill="#6B4226" opacity="0.5"/>
+  </g>
+
+  <!-- LEFT SIDE: Untrimmed, overgrown hedges -->
+  <g>
+    <!-- Hedge 1: Irregular, bushy shape -->
+    <path d="M60,215 Q55,200 70,195 Q85,188 95,195 Q108,190 115,200 Q122,195 120,215 Q122,240 115,260 Q100,275 80,275 Q65,275 60,260 Z" fill="url(#hedgeUntrimmed)"/>
+    <!-- Wild branches sticking out -->
+    <g stroke="#4A7A2E" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M65,200 Q55,190 50,185"/>
+      <path d="M95,190 Q100,180 98,172"/>
+      <path d="M115,198 Q125,192 130,188"/>
+    </g>
+    <g fill="#5A9A35" opacity="0.5">
+      <circle cx="48" cy="183" r="5"/>
+      <circle cx="97" cy="170" r="4"/>
+      <circle cx="132" cy="186" r="5"/>
+    </g>
+
+    <!-- Hedge 2: Irregular -->
+    <path d="M130,218 Q125,198 140,192 Q155,185 165,195 Q178,188 185,200 Q192,195 190,218 Q192,245 185,262 Q170,278 150,278 Q135,278 130,262 Z" fill="url(#hedgeUntrimmed)"/>
+    <g stroke="#4A7A2E" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M135,200 Q128,192 122,186"/>
+      <path d="M165,188 Q168,178 170,170"/>
+      <path d="M188,198 Q196,190 200,184"/>
+    </g>
+    <g fill="#5A9A35" opacity="0.5">
+      <circle cx="120" cy="184" r="4"/>
+      <circle cx="169" cy="168" r="5"/>
+      <circle cx="202" cy="182" r="4"/>
+    </g>
+
+    <!-- Hedge 3: Very overgrown -->
+    <path d="M200,220 Q195,195 210,188 Q228,178 240,190 Q255,182 260,198 Q270,192 268,220 Q270,248 260,265 Q245,282 225,282 Q208,282 200,265 Z" fill="url(#hedgeUntrimmed)"/>
+    <g stroke="#4A7A2E" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M205,198 Q195,188 190,180"/>
+      <path d="M230,182 Q235,170 238,162"/>
+      <path d="M262,196 Q272,186 278,180"/>
+    </g>
+    <g fill="#5A9A35" opacity="0.5">
+      <circle cx="188" cy="178" r="5"/>
+      <circle cx="237" cy="160" r="4"/>
+      <circle cx="280" cy="178" r="5"/>
+    </g>
+  </g>
+
+  <!-- Worker silhouette with hedge trimmer (in the middle, working) -->
+  <g transform="translate(290, 190)" fill="#1A1A1A">
+    <!-- Hard hat -->
+    <rect x="-10" y="-38" width="20" height="5" rx="2" fill="#D4A843"/>
+    <ellipse cx="0" cy="-31" rx="12" ry="4" fill="#D4A843"/>
+    <!-- Head -->
+    <circle cx="0" cy="-24" r="10"/>
+    <!-- Safety glasses -->
+    <rect x="-8" y="-27" width="16" height="4" rx="2" fill="#333" opacity="0.6"/>
+    <!-- Body -->
+    <rect x="-14" y="-14" width="28" height="42" rx="5"/>
+    <!-- Arms extended holding trimmer -->
+    <rect x="-40" y="-8" width="28" height="8" rx="3"/>
+    <rect x="14" y="-5" width="22" height="8" rx="3" transform="rotate(10, 25, -1)"/>
+    <!-- Legs -->
+    <rect x="-12" y="28" width="11" height="38" rx="3"/>
+    <rect x="3" y="28" width="11" height="38" rx="3" transform="rotate(-3, 8, 28)"/>
+    <!-- Boots -->
+    <rect x="-15" y="64" width="16" height="6" rx="2"/>
+    <rect x="1" y="64" width="16" height="6" rx="2"/>
+
+    <!-- Hedge trimmer -->
+    <rect x="-60" y="-10" width="22" height="10" rx="2" fill="#555"/>
+    <!-- Trimmer blade -->
+    <rect x="-92" y="-8" width="35" height="6" rx="1" fill="#AAA"/>
+    <!-- Blade teeth -->
+    <g fill="#888">
+      <rect x="-92" y="-10" width="3" height="2"/>
+      <rect x="-87" y="-10" width="3" height="2"/>
+      <rect x="-82" y="-10" width="3" height="2"/>
+      <rect x="-77" y="-10" width="3" height="2"/>
+      <rect x="-72" y="-10" width="3" height="2"/>
+      <rect x="-67" y="-10" width="3" height="2"/>
+      <rect x="-62" y="-10" width="3" height="2"/>
+    </g>
+    <!-- Motion lines from trimmer -->
+    <g stroke="#4A8A2A" stroke-width="1" opacity="0.4">
+      <line x1="-95" y1="-5" x2="-100" y2="-10"/>
+      <line x1="-95" y1="-5" x2="-102" y2="-5"/>
+      <line x1="-95" y1="-5" x2="-100" y2="0"/>
+    </g>
+  </g>
+
+  <!-- Cut leaf clippings on ground -->
+  <g fill="#4A8A2A" opacity="0.5">
+    <ellipse cx="240" cy="285" rx="3" ry="1.5" transform="rotate(20, 240, 285)"/>
+    <ellipse cx="250" cy="290" rx="2" ry="1" transform="rotate(-30, 250, 290)"/>
+    <ellipse cx="235" cy="292" rx="2.5" ry="1" transform="rotate(45, 235, 292)"/>
+    <ellipse cx="260" cy="288" rx="2" ry="1" transform="rotate(-15, 260, 288)"/>
+    <ellipse cx="245" cy="295" rx="3" ry="1.5" transform="rotate(60, 245, 295)"/>
+    <ellipse cx="230" cy="288" rx="2" ry="1" transform="rotate(-40, 230, 288)"/>
+    <ellipse cx="255" cy="293" rx="2.5" ry="1" transform="rotate(10, 255, 293)"/>
+  </g>
+
+  <!-- Decorative flowers along path (trimmed side) -->
+  <g>
+    <circle cx="345" cy="278" r="3" fill="#D4A843"/>
+    <circle cx="355" cy="280" r="2.5" fill="#D4A843"/>
+    <circle cx="365" cy="278" r="3" fill="#D4A843"/>
+    <circle cx="345" cy="278" r="1.5" fill="#E8C860"/>
+    <circle cx="355" cy="280" r="1.5" fill="#E8C860"/>
+    <circle cx="365" cy="278" r="1.5" fill="#E8C860"/>
+  </g>
+
+  <!-- Lawn stripes (on trimmed side) -->
+  <g fill="#4A8A2A" opacity="0.1">
+    <rect x="340" y="280" width="260" height="8"/>
+    <rect x="340" y="296" width="260" height="8"/>
+    <rect x="340" y="312" width="260" height="8"/>
+    <rect x="340" y="328" width="260" height="8"/>
+    <rect x="340" y="344" width="260" height="8"/>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#A8D0F0"/>
+    </linearGradient>
+    <linearGradient id="grass3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A7A2E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.8" cy="0.2" r="0.3">
+      <stop offset="0%" stop-color="#FFF8E0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFF8E0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="300" fill="url(#sky3)"/>
+  <!-- Sun glow -->
+  <circle cx="340" cy="50" r="120" fill="url(#sunGlow)"/>
+  <circle cx="340" cy="50" r="25" fill="#FFF3C0"/>
+  <!-- Ground -->
+  <rect x="0" y="230" width="400" height="70" fill="url(#grass3)"/>
+  <!-- Tree trunk -->
+  <rect x="170" y="60" width="35" height="170" fill="#6B4226"/>
+  <!-- Major branches -->
+  <line x1="187" y1="100" x2="120" y2="60" stroke="#6B4226" stroke-width="10" stroke-linecap="round"/>
+  <line x1="187" y1="90" x2="270" y2="50" stroke="#6B4226" stroke-width="10" stroke-linecap="round"/>
+  <line x1="187" y1="120" x2="100" y2="100" stroke="#6B4226" stroke-width="7" stroke-linecap="round"/>
+  <line x1="187" y1="110" x2="290" y2="90" stroke="#6B4226" stroke-width="7" stroke-linecap="round"/>
+  <line x1="187" y1="80" x2="200" y2="30" stroke="#6B4226" stroke-width="8" stroke-linecap="round"/>
+  <!-- Thinned canopy - scattered foliage clusters with gaps -->
+  <ellipse cx="115" cy="50" rx="30" ry="22" fill="#2D5016" opacity="0.8"/>
+  <ellipse cx="275" cy="40" rx="28" ry="20" fill="#2D5016" opacity="0.8"/>
+  <ellipse cx="200" cy="20" rx="25" ry="18" fill="#3D6B1E" opacity="0.7"/>
+  <ellipse cx="90" cy="90" rx="22" ry="16" fill="#2D5016" opacity="0.7"/>
+  <ellipse cx="295" cy="80" rx="20" ry="15" fill="#3D6B1E" opacity="0.7"/>
+  <ellipse cx="150" cy="35" rx="18" ry="14" fill="#3D6B1E" opacity="0.6"/>
+  <ellipse cx="240" cy="25" rx="20" ry="15" fill="#2D5016" opacity="0.6"/>
+  <!-- Light rays passing through -->
+  <g opacity="0.15" fill="#FFF8E0">
+    <polygon points="155,45 145,230 165,230"/>
+    <polygon points="225,35 215,230 235,230"/>
+    <polygon points="185,10 178,60 195,60"/>
+    <polygon points="260,55 250,230 270,230"/>
+  </g>
+  <!-- Bucket lift -->
+  <rect x="280" y="230" width="50" height="30" fill="#D4A843" rx="3"/>
+  <circle cx="290" cy="265" r="8" fill="#333"/>
+  <circle cx="320" cy="265" r="8" fill="#333"/>
+  <!-- Lift arm -->
+  <line x1="305" y1="220" x2="260" y2="140" stroke="#D4A843" stroke-width="6" stroke-linecap="round"/>
+  <line x1="260" y1="140" x2="240" y2="95" stroke="#D4A843" stroke-width="5" stroke-linecap="round"/>
+  <!-- Bucket -->
+  <rect x="228" y="85" width="24" height="25" fill="#D4A843" rx="2"/>
+  <!-- Worker in bucket -->
+  <circle cx="240" cy="78" r="6" fill="#1A3009"/>
+  <rect x="235" y="84" width="10" height="12" fill="#1A3009"/>
+  <!-- Cut branches falling -->
+  <g transform="rotate(25, 180, 180)">
+    <line x1="175" y1="150" x2="175" y2="185" stroke="#6B4226" stroke-width="3" stroke-linecap="round"/>
+    <line x1="175" y1="160" x2="165" y2="155" stroke="#6B4226" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="170" cy="148" rx="10" ry="8" fill="#2D5016" opacity="0.6"/>
+  </g>
+  <!-- Tree base/roots -->
+  <ellipse cx="187" cy="230" rx="30" ry="8" fill="#5A3620"/>
+</svg>

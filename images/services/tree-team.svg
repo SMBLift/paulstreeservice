@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <!-- Sky gradient -->
+    <linearGradient id="teamSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8cfe0"/>
+      <stop offset="60%" stop-color="#cde2ed"/>
+      <stop offset="100%" stop-color="#e8eeea"/>
+    </linearGradient>
+    <!-- Ground -->
+    <linearGradient id="teamGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a7a2a"/>
+      <stop offset="50%" stop-color="#3a6518"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <!-- Truck body gradient -->
+    <linearGradient id="truckBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f5f0"/>
+      <stop offset="100%" stop-color="#ddd8d0"/>
+    </linearGradient>
+    <!-- Tree canopy -->
+    <radialGradient id="teamCanopy" cx="0.4" cy="0.35" r="0.6">
+      <stop offset="0%" stop-color="#3d6b22"/>
+      <stop offset="100%" stop-color="#1e3a0e"/>
+    </radialGradient>
+    <!-- Warm overlay -->
+    <radialGradient id="teamWarm" cx="0.6" cy="0.3" r="0.5">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="450" fill="url(#teamSky)"/>
+
+  <!-- Distant treeline -->
+  <g fill="#7a9e5a" opacity="0.35">
+    <circle cx="30" cy="210" r="25"/>
+    <circle cx="60" cy="205" r="30"/>
+    <circle cx="95" cy="208" r="22"/>
+    <circle cx="125" cy="203" r="28"/>
+    <circle cx="430" cy="208" r="28"/>
+    <circle cx="465" cy="203" r="32"/>
+    <circle cx="500" cy="206" r="26"/>
+    <circle cx="535" cy="200" r="30"/>
+    <circle cx="570" cy="205" r="25"/>
+    <circle cx="600" cy="208" r="22"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M0 290 Q150 275 300 282 Q450 270 600 278 L600 450 L0 450 Z" fill="url(#teamGround)"/>
+
+  <!-- Ground texture -->
+  <g stroke="#4a7a2a" stroke-width="1" opacity="0.25">
+    <path d="M40 330 q3 -8 1 -16" fill="none"/>
+    <path d="M120 325 q3 -8 1 -16" fill="none"/>
+    <path d="M200 335 q3 -8 1 -16" fill="none"/>
+    <path d="M350 320 q3 -8 1 -16" fill="none"/>
+    <path d="M500 328 q3 -8 1 -16" fill="none"/>
+    <path d="M560 332 q3 -8 1 -16" fill="none"/>
+  </g>
+
+  <!-- Large work tree (center-right) -->
+  <g transform="translate(340, -20)">
+    <!-- Tree shadow -->
+    <ellipse cx="25" cy="310" rx="120" ry="20" fill="#1e3a0e" opacity="0.2"/>
+    <!-- Trunk -->
+    <path d="M15 310 Q10 230 18 100 Q22 85 25 100 Q30 180 28 250 L38 310 Z" fill="#6B4226"/>
+    <!-- Bark lines -->
+    <path d="M20 280 Q24 272 22 258" stroke="#5a3720" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M22 220 Q26 210 24 195" stroke="#5a3720" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M21 160 Q25 150 23 135" stroke="#5a3720" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <!-- Major branches -->
+    <path d="M20 160 Q-30 110 -70 80" stroke="#6B4226" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M-40 100 Q-60 80 -80 55" stroke="#6B4226" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M24 130 Q70 80 100 55" stroke="#6B4226" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M75 70 Q95 45 110 30" stroke="#6B4226" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M22 200 Q-15 175 -35 155" stroke="#6B4226" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M26 185 Q55 155 70 135" stroke="#6B4226" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Canopy -->
+    <ellipse cx="20" cy="80" rx="130" ry="95" fill="url(#teamCanopy)"/>
+    <ellipse cx="-25" cy="65" rx="80" ry="65" fill="#2D5016"/>
+    <ellipse cx="65" cy="55" rx="85" ry="70" fill="#2D5016"/>
+    <ellipse cx="20" cy="40" rx="90" ry="55" fill="#335e18"/>
+    <circle cx="-10" cy="35" r="35" fill="#3d6b22" opacity="0.5"/>
+    <circle cx="60" cy="30" r="32" fill="#3d6b22" opacity="0.4"/>
+    <circle cx="20" cy="15" r="28" fill="#407a1f" opacity="0.4"/>
+    <!-- Roots -->
+    <path d="M12 310 Q-5 318 -18 312 Q-8 305 12 308" fill="#6B4226"/>
+    <path d="M38 310 Q55 316 68 310 Q58 304 38 308" fill="#6B4226"/>
+  </g>
+
+  <!-- Tree service truck (background left) -->
+  <g transform="translate(30, 195)">
+    <!-- Truck shadow -->
+    <ellipse cx="80" cy="95" rx="75" ry="8" fill="#1e3a0e" opacity="0.2"/>
+    <!-- Truck bed / box body -->
+    <rect x="45" y="30" width="80" height="55" rx="2" fill="url(#truckBody)" stroke="#bbb" stroke-width="1"/>
+    <!-- Truck cab -->
+    <path d="M15 45 Q15 30 30 30 L45 30 L45 85 L15 85 Z" fill="url(#truckBody)" stroke="#bbb" stroke-width="1"/>
+    <!-- Windshield -->
+    <path d="M18 38 L18 55 L42 55 L42 33 Z" fill="#87CEEB" opacity="0.7"/>
+    <!-- Windshield reflection -->
+    <path d="M20 40 L20 50 L30 40 Z" fill="white" opacity="0.3"/>
+    <!-- Truck text on side -->
+    <text x="60" y="58" font-family="Arial, sans-serif" font-size="6" fill="#2D5016" font-weight="bold" letter-spacing="0.5">PAUL'S</text>
+    <text x="57" y="66" font-family="Arial, sans-serif" font-size="5" fill="#2D5016" letter-spacing="0.5">TREE SERVICE</text>
+    <!-- Green stripe on truck -->
+    <rect x="45" y="72" width="80" height="4" fill="#2D5016" opacity="0.6"/>
+    <!-- Wheels -->
+    <circle cx="30" cy="88" r="9" fill="#3d3d3d"/>
+    <circle cx="30" cy="88" r="5" fill="#666"/>
+    <circle cx="30" cy="88" r="2" fill="#999"/>
+    <circle cx="105" cy="88" r="9" fill="#3d3d3d"/>
+    <circle cx="105" cy="88" r="5" fill="#666"/>
+    <circle cx="105" cy="88" r="2" fill="#999"/>
+    <!-- Bumper -->
+    <rect x="10" y="82" width="8" height="4" rx="1" fill="#999"/>
+    <!-- Side mirror -->
+    <rect x="12" y="42" width="5" height="4" rx="1" fill="#999"/>
+    <!-- Headlight -->
+    <rect x="12" y="70" width="4" height="5" rx="1" fill="#D4A843" opacity="0.8"/>
+    <!-- Chip guard/equipment rack on top -->
+    <rect x="48" y="24" width="74" height="6" rx="1" fill="#888" opacity="0.5"/>
+    <rect x="55" y="20" width="3" height="10" fill="#888" opacity="0.5"/>
+    <rect x="85" y="20" width="3" height="10" fill="#888" opacity="0.5"/>
+    <rect x="115" y="20" width="3" height="10" fill="#888" opacity="0.5"/>
+  </g>
+
+  <!-- Worker 1 (left, pointing up at tree) -->
+  <g transform="translate(200, 10)">
+    <!-- Shadow -->
+    <ellipse cx="18" cy="282" rx="18" ry="5" fill="#1e3a0e" opacity="0.25"/>
+    <!-- Boots -->
+    <rect x="8" y="271" width="9" height="10" rx="2" fill="#3d2a15"/>
+    <rect x="20" y="271" width="9" height="10" rx="2" fill="#3d2a15"/>
+    <rect x="6" y="276" width="11" height="5" rx="2" fill="#3d2a15"/>
+    <rect x="18" y="276" width="11" height="5" rx="2" fill="#3d2a15"/>
+    <!-- Legs -->
+    <rect x="9" y="238" width="9" height="35" rx="3" fill="#3d3d3d"/>
+    <rect x="20" y="238" width="9" height="35" rx="3" fill="#3d3d3d"/>
+    <!-- Torso -->
+    <path d="M5 185 Q3 200 5 238 L33 238 Q35 200 33 185 Z" fill="#2D5016"/>
+    <!-- Safety vest stripes -->
+    <line x1="8" y1="195" x2="30" y2="195" stroke="#D4A843" stroke-width="2.5" opacity="0.8"/>
+    <line x1="8" y1="215" x2="30" y2="215" stroke="#D4A843" stroke-width="2.5" opacity="0.8"/>
+    <line x1="19" y1="185" x2="19" y2="238" stroke="#D4A843" stroke-width="2" opacity="0.6"/>
+    <!-- Right arm pointing up -->
+    <path d="M33 190 Q48 165 55 140" stroke="#2D5016" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- Pointing hand -->
+    <circle cx="55" cy="138" r="4" fill="#c4956a"/>
+    <line x1="55" y1="134" x2="57" y2="126" stroke="#c4956a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Left arm down -->
+    <path d="M5 192 Q-5 215 -2 235" stroke="#2D5016" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="-2" cy="236" r="4" fill="#c4956a"/>
+    <!-- Neck -->
+    <rect x="15" y="176" width="8" height="10" rx="3" fill="#c4956a"/>
+    <!-- Head -->
+    <ellipse cx="19" cy="168" rx="11" ry="13" fill="#c4956a"/>
+    <!-- Hard hat -->
+    <path d="M6 163 Q8 150 19 147 Q30 150 32 163 Z" fill="#D4A843"/>
+    <rect x="4" y="161" width="30" height="4" rx="2" fill="#c4952e"/>
+    <!-- Face -->
+    <circle cx="15" cy="166" r="1.2" fill="#5a3d2a"/>
+    <circle cx="23" cy="166" r="1.2" fill="#5a3d2a"/>
+    <path d="M16 172 Q19 174 22 172" stroke="#5a3d2a" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Worker 2 (center, standing with arms at sides - team lead) -->
+  <g transform="translate(280, 15)">
+    <!-- Shadow -->
+    <ellipse cx="18" cy="278" rx="18" ry="5" fill="#1e3a0e" opacity="0.25"/>
+    <!-- Boots -->
+    <rect x="8" y="266" width="9" height="10" rx="2" fill="#3d2a15"/>
+    <rect x="21" y="266" width="9" height="10" rx="2" fill="#3d2a15"/>
+    <rect x="6" y="271" width="11" height="5" rx="2" fill="#3d2a15"/>
+    <rect x="19" y="271" width="11" height="5" rx="2" fill="#3d2a15"/>
+    <!-- Legs -->
+    <rect x="9" y="233" width="10" height="35" rx="3" fill="#4a4a3d"/>
+    <rect x="20" y="233" width="10" height="35" rx="3" fill="#4a4a3d"/>
+    <!-- Torso (slightly larger - team lead) -->
+    <path d="M4 178 Q2 195 4 233 L35 233 Q37 195 35 178 Z" fill="#2D5016"/>
+    <!-- Vest stripes -->
+    <line x1="7" y1="190" x2="32" y2="190" stroke="#D4A843" stroke-width="2.5" opacity="0.8"/>
+    <line x1="7" y1="210" x2="32" y2="210" stroke="#D4A843" stroke-width="2.5" opacity="0.8"/>
+    <!-- Arms crossed / at sides -->
+    <path d="M35 184 Q48 200 45 225" stroke="#2D5016" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <circle cx="45" cy="226" r="4.5" fill="#c4956a"/>
+    <path d="M4 184 Q-8 200 -5 225" stroke="#2D5016" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <circle cx="-5" cy="226" r="4.5" fill="#c4956a"/>
+    <!-- Neck -->
+    <rect x="15" y="169" width="9" height="11" rx="3" fill="#c4956a"/>
+    <!-- Head -->
+    <ellipse cx="19.5" cy="160" rx="12" ry="14" fill="#c4956a"/>
+    <!-- Hard hat -->
+    <path d="M6 155 Q8 141 19.5 138 Q31 141 33 155 Z" fill="#D4A843"/>
+    <rect x="4" y="153" width="31" height="4" rx="2" fill="#c4952e"/>
+    <!-- Face -->
+    <circle cx="15" cy="158" r="1.3" fill="#5a3d2a"/>
+    <circle cx="24" cy="158" r="1.3" fill="#5a3d2a"/>
+    <path d="M16 164 Q19.5 167 23 164" stroke="#5a3d2a" stroke-width="1" fill="none"/>
+    <!-- Slight beard/stubble -->
+    <path d="M13 166 Q19.5 172 26 166" stroke="#8a7060" stroke-width="1.5" fill="none" opacity="0.3"/>
+  </g>
+
+  <!-- Worker 3 (right, holding rope/equipment) -->
+  <g transform="translate(330, 20)">
+    <!-- Shadow -->
+    <ellipse cx="16" cy="272" rx="16" ry="5" fill="#1e3a0e" opacity="0.25"/>
+    <!-- Boots -->
+    <rect x="6" y="261" width="8" height="10" rx="2" fill="#3d2a15"/>
+    <rect x="18" y="261" width="8" height="10" rx="2" fill="#3d2a15"/>
+    <rect x="4" y="266" width="10" height="5" rx="2" fill="#3d2a15"/>
+    <rect x="16" y="266" width="10" height="5" rx="2" fill="#3d2a15"/>
+    <!-- Legs -->
+    <rect x="7" y="230" width="9" height="33" rx="3" fill="#3d3d3d"/>
+    <rect x="18" y="230" width="9" height="33" rx="3" fill="#3d3d3d"/>
+    <!-- Torso -->
+    <path d="M3 180 Q1 195 3 230 L30 230 Q32 195 30 180 Z" fill="#2D5016"/>
+    <!-- Vest stripes -->
+    <line x1="6" y1="190" x2="27" y2="190" stroke="#D4A843" stroke-width="2" opacity="0.8"/>
+    <line x1="6" y1="208" x2="27" y2="208" stroke="#D4A843" stroke-width="2" opacity="0.8"/>
+    <!-- Left arm holding rope up -->
+    <path d="M3 185 Q-10 170 -8 150" stroke="#2D5016" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="-8" cy="148" r="3.5" fill="#c4956a"/>
+    <!-- Rope going up to tree -->
+    <path d="M-8 148 Q-5 100 20 50 Q60 -10 120 -30" stroke="#8B7355" stroke-width="2.5" fill="none" stroke-dasharray="6 3" opacity="0.6"/>
+    <!-- Right arm at side -->
+    <path d="M30 185 Q40 205 38 225" stroke="#2D5016" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="38" cy="226" r="3.5" fill="#c4956a"/>
+    <!-- Neck -->
+    <rect x="13" y="171" width="7" height="10" rx="3" fill="#c4956a"/>
+    <!-- Head -->
+    <ellipse cx="16.5" cy="163" rx="10" ry="12" fill="#c4956a"/>
+    <!-- Hard hat -->
+    <path d="M5 158 Q7 146 16.5 143 Q26 146 28 158 Z" fill="#D4A843"/>
+    <rect x="3" y="156" width="27" height="4" rx="2" fill="#c4952e"/>
+    <!-- Face -->
+    <circle cx="13" cy="161" r="1.2" fill="#5a3d2a"/>
+    <circle cx="20" cy="161" r="1.2" fill="#5a3d2a"/>
+    <path d="M14 167 Q16.5 169 19 167" stroke="#5a3d2a" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Wood chips / debris on ground near tree -->
+  <g fill="#8B7355" opacity="0.4">
+    <ellipse cx="360" cy="300" rx="4" ry="2" transform="rotate(20 360 300)"/>
+    <ellipse cx="375" cy="305" rx="3" ry="1.5" transform="rotate(-15 375 305)"/>
+    <ellipse cx="390" cy="298" rx="3.5" ry="1.5" transform="rotate(30 390 298)"/>
+    <ellipse cx="350" cy="308" rx="3" ry="1.5" transform="rotate(-25 350 308)"/>
+    <ellipse cx="400" cy="303" rx="4" ry="2" transform="rotate(10 400 303)"/>
+    <ellipse cx="380" cy="312" rx="3" ry="1.5" transform="rotate(-5 380 312)"/>
+  </g>
+
+  <!-- Warm overlay -->
+  <rect width="600" height="450" fill="url(#teamWarm)"/>
+
+  <!-- Subtle vignette -->
+  <rect width="600" height="450" fill="none" stroke="#2D5016" stroke-width="60" opacity="0.05"/>
+</svg>

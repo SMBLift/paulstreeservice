@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="sky9a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="100%" stop-color="#C8E6F0"/>
+    </linearGradient>
+    <linearGradient id="sky9b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9FD4"/>
+      <stop offset="100%" stop-color="#A8D0F0"/>
+    </linearGradient>
+    <linearGradient id="grass9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A8A3E"/>
+      <stop offset="100%" stop-color="#2D5016"/>
+    </linearGradient>
+    <clipPath id="leftHalf">
+      <rect x="0" y="0" width="200" height="300"/>
+    </clipPath>
+    <clipPath id="rightHalf">
+      <rect x="200" y="0" width="200" height="300"/>
+    </clipPath>
+  </defs>
+  <!-- LEFT SIDE - BEFORE -->
+  <g clip-path="url(#leftHalf)">
+    <!-- Sky -->
+    <rect width="200" height="300" fill="url(#sky9a)"/>
+    <!-- Ground -->
+    <rect x="0" y="210" width="200" height="90" fill="url(#grass9)"/>
+    <!-- House partially hidden by tree -->
+    <rect x="100" y="100" width="90" height="110" fill="#F5F2EE"/>
+    <polygon points="100,100 145,65 190,100" fill="#6B4226"/>
+    <rect x="120" y="125" width="18" height="22" fill="#87CEEB" opacity="0.4"/>
+    <rect x="155" y="125" width="18" height="22" fill="#87CEEB" opacity="0.4"/>
+    <!-- Large tree in front -->
+    <rect x="50" y="50" width="25" height="160" fill="#6B4226"/>
+    <ellipse cx="62" cy="30" rx="65" ry="50" fill="#2D5016"/>
+    <ellipse cx="40" cy="40" rx="40" ry="35" fill="#1A3009" opacity="0.8"/>
+    <ellipse cx="85" cy="35" rx="35" ry="30" fill="#2D5016" opacity="0.8"/>
+    <ellipse cx="62" cy="15" rx="45" ry="28" fill="#3D6B1E" opacity="0.7"/>
+    <!-- Shadow on ground -->
+    <ellipse cx="80" cy="215" rx="60" ry="12" fill="#1A3009" opacity="0.2"/>
+  </g>
+  <!-- RIGHT SIDE - AFTER -->
+  <g clip-path="url(#rightHalf)">
+    <!-- Brighter sky -->
+    <rect x="200" y="0" width="200" height="300" fill="url(#sky9b)"/>
+    <!-- Ground - clean lawn -->
+    <rect x="200" y="210" width="200" height="90" fill="url(#grass9)"/>
+    <!-- Clean green lawn overlay -->
+    <rect x="200" y="210" width="200" height="90" fill="#5A8A3E" opacity="0.15"/>
+    <!-- House now visible -->
+    <rect x="260" y="100" width="110" height="110" fill="#F5F2EE"/>
+    <polygon points="260,100 315,55 370,100" fill="#6B4226"/>
+    <rect x="280" y="125" width="20" height="24" fill="#87CEEB" opacity="0.5"/>
+    <rect x="320" y="125" width="20" height="24" fill="#87CEEB" opacity="0.5"/>
+    <rect x="300" y="170" width="20" height="40" fill="#6B4226"/>
+    <!-- Sun visible -->
+    <circle cx="380" cy="40" r="20" fill="#FFF3C0" opacity="0.8"/>
+    <!-- Clean yard - small flower bed -->
+    <ellipse cx="280" cy="215" rx="15" ry="5" fill="#2D5016" opacity="0.5"/>
+    <circle cx="275" cy="212" r="3" fill="#D44A4A" opacity="0.5"/>
+    <circle cx="282" cy="210" r="2.5" fill="#E06080" opacity="0.5"/>
+    <circle cx="288" cy="213" r="3" fill="#D44A4A" opacity="0.5"/>
+    <!-- Fresh mulch where tree was -->
+    <ellipse cx="310" cy="225" rx="15" ry="5" fill="#D4A843" opacity="0.3"/>
+  </g>
+  <!-- Center divider -->
+  <line x1="200" y1="0" x2="200" y2="300" stroke="white" stroke-width="3"/>
+  <!-- BEFORE label -->
+  <g transform="translate(50, 270)">
+    <rect x="-35" y="-14" width="70" height="22" rx="4" fill="#6B4226" opacity="0.85"/>
+    <text x="0" y="2" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#F5F2EE" text-anchor="middle">BEFORE</text>
+  </g>
+  <!-- AFTER label -->
+  <g transform="translate(340, 270)">
+    <rect x="-30" y="-14" width="60" height="22" rx="4" fill="#2D5016" opacity="0.85"/>
+    <text x="0" y="2" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#F5F2EE" text-anchor="middle">AFTER</text>
+  </g>
+  <!-- Diagonal arrow -->
+  <g opacity="0.8">
+    <circle cx="200" cy="140" r="16" fill="#D4A843"/>
+    <polygon points="193,140 207,140 200,150" fill="white"/>
+    <rect x="197" y="128" width="6" height="15" fill="white"/>
+  </g>
+</svg>
