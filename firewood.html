@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firewood | Paul's Tree Service Pittsburgh - Cord Wood Delivery</title>
+  <meta name="description" content="Quality firewood delivered in Pittsburgh, PA. Face cords and full cords available. Seasoned cord wood for fire pits, fireplaces, and wood burners. Call to order.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Firewood | Paul's Tree Service Pittsburgh - Cord Wood Delivery">
+  <meta property="og:description" content="Quality firewood delivered in Pittsburgh, PA. Face cords and full cords available. Seasoned cord wood for fire pits, fireplaces, and wood burners. Call to order.">
+  <meta property="og:image" content="https://pauls-tree-service.com/images/og-image.jpg">
+  <meta property="og:url" content="https://pauls-tree-service.com/firewood">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Firewood | Paul's Tree Service Pittsburgh - Cord Wood Delivery">
+  <meta name="twitter:description" content="Quality firewood delivered in Pittsburgh, PA. Face cords and full cords available. Seasoned cord wood for fire pits, fireplaces, and wood burners. Call to order.">
+  <meta name="twitter:image" content="https://pauls-tree-service.com/images/og-image.jpg">
+
+  <!-- Geo Meta Tags -->
+  <meta name="geo.region" content="US-PA">
+  <meta name="geo.placename" content="Pittsburgh">
+  <meta name="geo.position" content="40.4406;-79.9959">
+  <meta name="ICBM" content="40.4406, -79.9959">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://pauls-tree-service.com/firewood">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.svg">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Page Hero Styles -->
+  <style>
+    .page-hero {
+      background: linear-gradient(rgba(45, 80, 22, 0.85), rgba(45, 80, 22, 0.85)),
+                  url('images/firewood/firewood-hero.jpg') center/cover no-repeat;
+      color: white;
+      padding: 5rem 0 4rem;
+      text-align: center;
+    }
+    .page-hero__title {
+      font-size: 2.5rem;
+      color: white;
+      margin-bottom: 0.75rem;
+    }
+    .page-hero__subtitle {
+      font-size: 1.125rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Firewood Page Styles */
+    .firewood-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+    .firewood-intro__text {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+      line-height: 1.8;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+    @media (min-width: 600px) {
+      .pricing-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .pricing-card {
+      background: var(--color-bg-white);
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      transition: border-color var(--transition-base), box-shadow var(--transition-base);
+    }
+    .pricing-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-lg);
+    }
+    .pricing-card__icon {
+      width: 48px;
+      height: 48px;
+      color: var(--color-primary);
+      margin: 0 auto 1rem;
+    }
+    .pricing-card__title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .pricing-card__desc {
+      color: var(--color-text-muted);
+      font-size: 0.9375rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .pricing-card__price {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 0.25rem;
+    }
+    .pricing-card__note {
+      font-size: 0.9375rem;
+      color: var(--color-text-muted);
+      font-weight: 600;
+    }
+
+    .firewood-details {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .firewood-details__title {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .firewood-details__list {
+      list-style: none;
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+    .firewood-details__list li {
+      padding-left: 1.75rem;
+      position: relative;
+      line-height: 1.6;
+      color: var(--color-text-muted);
+    }
+    .firewood-details__list li::before {
+      content: '\2713';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--color-primary);
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .firewood-order {
+      background: var(--color-bg-alt, #f8f6f3);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .firewood-order__title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .firewood-order__text {
+      color: var(--color-text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    .firewood-order__phone {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .firewood-order__phone:hover {
+      opacity: 0.85;
+    }
+    .firewood-order__phone svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .firewood-photos {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    @media (min-width: 600px) {
+      .firewood-photos {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .firewood-photos__img {
+      width: 100%;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Firewood",
+    "description": "Quality cord wood for fire pits, fireplaces, and wood burners. Delivered to your location in Pittsburgh, PA.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Paul's Tree Service"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Face Cord",
+        "price": "100.00",
+        "priceCurrency": "USD",
+        "description": "Face cord of firewood, delivered",
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Full Cord",
+        "price": "270.00",
+        "priceCurrency": "USD",
+        "description": "Full cord of firewood, delivered",
+        "availability": "https://schema.org/InStock"
+      }
+    ],
+    "seller": {
+      "@type": "LocalBusiness",
+      "name": "Paul's Tree Service",
+      "telephone": "+14124414444",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pittsburgh",
+        "addressRegion": "PA",
+        "addressCountry": "US"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar__left">
+        <a href="tel:+14124414444" class="top-bar__phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (412) 441-4444
+        </a>
+        <span class="top-bar__divider">|</span>
+        <span class="top-bar__text">Free Estimates</span>
+        <span class="top-bar__divider">|</span>
+        <span class="top-bar__text">24/7 Emergency Service</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo.png" alt="Paul's Tree Service" width="180" height="60">
+        <span class="header__logo-text">Paul's Tree Service</span>
+      </a>
+      <nav class="header__nav" id="nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li><a href="firewood.html" class="header__nav-link header__nav-link--active">Firewood</a></li>
+          <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+14124414444" class="btn btn--primary header__cta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="header__menu-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">Firewood</h1>
+        <p class="page-hero__subtitle">Quality cord wood for fire pits, fireplaces, and wood burners &mdash; delivered right to your door.</p>
+      </div>
+    </section>
+
+    <!-- Firewood Content -->
+    <section class="section">
+      <div class="container">
+
+        <div class="firewood-intro">
+          <p class="firewood-intro__text">We have firewood! As a tree service, we always have a fresh supply of quality cord wood available. Whether you need wood for your outdoor fire pit, fireplace, or wood burner, we've got you covered. All firewood is delivered and dumped at your location.</p>
+        </div>
+
+        <!-- Firewood Photos -->
+        <div class="firewood-photos">
+          <img src="images/firewood/firewood-1.jpg" alt="Stacked cord wood ready for delivery" class="firewood-photos__img" width="600" height="450" loading="lazy">
+          <img src="images/firewood/firewood-2.jpg" alt="Large supply of split firewood" class="firewood-photos__img" width="600" height="450" loading="lazy">
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="12" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h2 class="pricing-card__title">Face Cord</h2>
+            <p class="pricing-card__desc">A 4' high &times; 8' wide stack of firewood, one log deep. Great for casual use and fire pits.</p>
+            <div class="pricing-card__price">$100</div>
+            <div class="pricing-card__note">Delivered</div>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="22" height="18" rx="2" ry="2"/><line x1="1" y1="9" x2="23" y2="9"/><line x1="1" y1="15" x2="23" y2="15"/></svg>
+            </div>
+            <h2 class="pricing-card__title">Full Cord</h2>
+            <p class="pricing-card__desc">A 4' high &times; 8' wide &times; 4' deep stack. Best value for regular use and heating.</p>
+            <div class="pricing-card__price">$270</div>
+            <div class="pricing-card__note">Delivered</div>
+          </div>
+        </div>
+
+        <!-- Details -->
+        <div class="firewood-details">
+          <h2 class="firewood-details__title">What You Get</h2>
+          <ul class="firewood-details__list">
+            <li>Mixed hardwood from local tree removals</li>
+            <li>Delivered and dumped at your location</li>
+            <li>Available year-round while supplies last</li>
+            <li>Perfect for fire pits, fireplaces, and wood burners</li>
+            <li>Serving Pittsburgh and surrounding areas</li>
+          </ul>
+        </div>
+
+        <!-- Order CTA -->
+        <div class="firewood-order">
+          <h2 class="firewood-order__title">Ready to Order?</h2>
+          <p class="firewood-order__text">Give Paul a call to place your firewood order. We'll deliver it right to your location.</p>
+          <a href="tel:+14124414444" class="firewood-order__phone">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (412) 441-4444
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__title">Need Tree Service Too?</h2>
+        <p class="cta-banner__text">In addition to firewood, we offer complete tree care services including removal, trimming, stump grinding, and more.</p>
+        <div class="cta-banner__actions">
+          <a href="services.html" class="btn btn--accent btn--large">View Our Services</a>
+          <a href="tel:+14124414444" class="btn btn--white btn--large">Call (412) 441-4444</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <img src="images/logo.png" alt="Paul's Tree Service" class="footer__logo" width="160" height="53">
+          <p class="footer__desc">Family-owned tree service proudly serving Pittsburgh and surrounding communities since 1987.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/PaulGregorius86/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/paulstreespgh" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.yelp.com/biz/pauls-tree-service-no-title" target="_blank" rel="noopener noreferrer" aria-label="Yelp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 011.596-.206 9.194 9.194 0 012.364 3.2 1.073 1.073 0 01-.694 1.51zm-3.005 5.69a1.073 1.073 0 01-1.506.354 9.233 9.233 0 01-2.771-2.87 1.073 1.073 0 01.476-1.572l4.752-2.08c.913-.4 1.82.532 1.373 1.41l-2.324 4.758zM10.23 19.811a1.073 1.073 0 01-1.4-.725 9.2 9.2 0 01-.18-3.955 1.073 1.073 0 011.327-.852l5.095 1.192c.978.228.978 1.617 0 1.846l-4.842 1.494zm-2.12-7.39L3.2 10.696c-.944-.333-.7-1.682.37-1.682h5.248a1.073 1.073 0 011.06 1.178 9.233 9.233 0 01-1.085 3.64 1.073 1.073 0 01-1.593.282l.91.007zM10.8 1.5c-.5-.135-1.07.153-1.2.648L7.2 10.044c-.275.96.807 1.734 1.636 1.17l4.27-2.9a1.073 1.073 0 00.198-1.6A9.233 9.233 0 0010.8 1.5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading">Quick Links</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="firewood.html">Firewood</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading">Contact Us</h3>
+          <address class="footer__contact">
+            <p>Pittsburgh, PA</p>
+            <p><a href="tel:+14124414444">(412) 441-4444</a></p>
+            <p><a href="mailto:paulstreespgh@gmail.com">paulstreespgh@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading">Hours</h3>
+          <p>Monday &ndash; Saturday: 7AM &ndash; 7PM</p>
+          <p>Sunday: Emergency Only</p>
+          <p>24/7 Emergency Service Available</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Paul's Tree Service. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
